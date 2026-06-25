@@ -328,6 +328,15 @@ class StrategyEngine:
             'final_equity': equities[-1],
             'initial_equity': self.initial_cash,
             'version': self.version,
+            'final_state': {
+                'equity': equity,
+                'peak': peak,
+                'in_stop': in_stop,
+                'cooldown_days': cooldown_days,
+                'stop_counter': stop_counter,
+                'days_since_stop': days_since_stop,
+                'daily_returns_list': daily_returns,
+            }
         }
 
     def _allocate(self, tqqq_bull, eth_bull, btc_bull, gld_bull, sqqq_bull,
@@ -440,19 +449,26 @@ def get_today_signals(version: str = 'V503') -> dict:
     p = params
 
     # Download enough data for all indicators
-    lookback_days = p['regime'] + 50
+    lookback_days = p['regime'] + 100
     start = (datetime.today() - timedelta(days=lookback_days * 2)).strftime('%Y-%m-%d')
     
     data = download_data(start=start)
-    if len(data) < p['regime']:
+    if len(data) < p['regime'] + 21:
         return {'error': 'Insufficient data'}
 
-    # Compute signals using latest available data (no lookahead)
-    result = {}
-    last_idx = len(data) - 2  # Use second-to-last as "previous day" (no lookahead)
+    # 1. Run backtest to get exact state as of today
+    engine = StrategyEngine(version)
+    res = engine.run(data)
+    state = res['final_state']
 
-    bull_assets = []
+    # 2. Compute the signal for TOMORROW using TODAY'S close
+    last_idx = len(data) - 1  # No lookahead, use the absolute latest data
+
+    signals = {}
+    rsi = {}
+    momentum = {}
     detail = {}
+    bull_assets = []
     
     for asset in ['TQQQ', 'ETH', 'BTC', 'GLD', 'SQQQ']:
         if asset not in data.columns:
@@ -461,7 +477,7 @@ def get_today_signals(version: str = 'V503') -> dict:
         sma_fast = prices.rolling(p['fast']).mean()
         sma_slow = prices.rolling(p['slow']).mean()
         sma_regime = prices.rolling(p['regime']).mean()
-        rsi = compute_rsi2(prices)
+        rsi_vals = compute_rsi2(prices)
         mom = compute_momentum(prices, p['mom_lookback'])
         
         is_bull = bool(
@@ -471,12 +487,12 @@ def get_today_signals(version: str = 'V503') -> dict:
         )
         
         detail[asset] = {
-            'price': float(prices.iloc[-1]),
-            'price_prev': float(prices.iloc[last_idx]),
+            'price': float(prices.iloc[last_idx]),
+            'price_prev': float(prices.iloc[last_idx - 1]) if last_idx > 0 else float(prices.iloc[last_idx]),
             'sma_fast': float(sma_fast.iloc[last_idx]),
             'sma_slow': float(sma_slow.iloc[last_idx]),
             'sma_regime': float(sma_regime.iloc[last_idx]),
-            'rsi2': float(rsi.iloc[last_idx]) if pd.notna(rsi.iloc[last_idx]) else None,
+            'rsi2': float(rsi_vals.iloc[last_idx]) if pd.notna(rsi_vals.iloc[last_idx]) else None,
             'momentum': float(mom.iloc[last_idx]) if pd.notna(mom.iloc[last_idx]) else None,
             'is_bull': is_bull,
             'above_fast': bool(prices.iloc[last_idx] > sma_fast.iloc[last_idx]),
@@ -486,47 +502,60 @@ def get_today_signals(version: str = 'V503') -> dict:
         
         if is_bull and asset not in ['SQQQ', 'GLD']:
             bull_assets.append((asset, float(mom.iloc[last_idx])))
+            
+        signals[asset] = is_bull
+        rsi[asset] = float(rsi_vals.iloc[last_idx]) if pd.notna(rsi_vals.iloc[last_idx]) else 50.0
+        momentum[asset] = float(mom.iloc[last_idx]) if pd.notna(mom.iloc[last_idx]) else 0.0
 
-    # Determine allocation
-    bull_assets.sort(key=lambda x: x[1], reverse=True)
-    w = p['mom_split']
-    mr_oversold = p['mr_oversold']
-    mr_alloc = p['mr_alloc']
+    # 3. Compute leverage exactly as backtest does
+    lev = 1.0
+    if p.get('target_vol') and len(state['daily_returns_list']) >= 5:
+        vol_lookback = p.get('vol_lookback', 21)
+        recent_vol = np.std(state['daily_returns_list'][-vol_lookback:]) * np.sqrt(252)
+        if recent_vol > 0:
+            lev = p['target_vol'] / recent_vol
+            if state['days_since_stop'] < p.get('post_stop_days', 10):
+                lev = min(lev, 1.0)
+            lev = max(0.5, min(lev, p['max_lev']))
+            
+    # 4. Check if we should be in stop mode
+    equity = state['equity']
+    peak = state['peak']
+    in_stop = state['in_stop']
     
-    allocation = {}
-    signal_reason = ''
-    
-    gld_bull = detail.get('GLD', {}).get('is_bull', False)
-    sqqq_bull = detail.get('SQQQ', {}).get('is_bull', False) if p['use_sqqq'] else False
-    rsi_sqqq = detail.get('SQQQ', {}).get('rsi2', 50)
-    
-    if len(bull_assets) >= 2:
-        allocation = {bull_assets[0][0]: w[0], bull_assets[1][0]: w[1]}
-        signal_reason = f'📈 BULL — {bull_assets[0][0]} ({w[0]:.0%}) + {bull_assets[1][0]} ({w[1]:.0%}), split by 21d momentum'
-    elif len(bull_assets) == 1:
-        allocation = {bull_assets[0][0]: 1.0}
-        signal_reason = f'📈 BULL — 100% {bull_assets[0][0]}'
-    elif gld_bull:
-        allocation = {'GLD': 0.5, 'SHV': 0.5}
-        signal_reason = '🥇 GLD fallback — 50% Gold + 50% SHV'
-    elif sqqq_bull and rsi_sqqq < 90:
-        allocation = {'SQQQ': 1.0}
-        signal_reason = '🐻 BEAR MARKET — 100% SQQQ (profit from downturn)'
+    if in_stop:
+        allocation = {'SHV': 1.0}
+        signal_reason = f'🛑 STOP MODE (Cooldown) - 100% SHV'
+    elif peak > 0 and (peak - equity) / peak > p['stop_threshold']:
+        allocation = {'SHV': 1.0}
+        signal_reason = f'🛑 VENDER TODO (STOP) - Caída del {(peak-equity)/peak:.1%}'
     else:
-        # Check MR overlay
-        mr_candidates = []
-        for asset in ['TQQQ', 'ETH', 'BTC']:
-            if asset in detail and detail[asset]['rsi2'] < mr_oversold:
-                mr_candidates.append((asset, detail[asset]['rsi2']))
+        # 5. Normal allocation cascade
+        allocation = engine._allocate(
+            signals.get('TQQQ', False), signals.get('ETH', False), signals.get('BTC', False),
+            signals.get('GLD', False), signals.get('SQQQ', False),
+            rsi.get('TQQQ', 50), rsi.get('ETH', 50), rsi.get('BTC', 50), rsi.get('SQQQ', 50),
+            momentum.get('TQQQ', 0), momentum.get('ETH', 0), momentum.get('BTC', 0),
+            lev, p
+        )
         
-        if mr_candidates:
-            mr_candidates.sort(key=lambda x: x[1])
-            mr_asset = mr_candidates[0][0]
-            allocation = {mr_asset: mr_alloc, 'SHV': 1.0 - mr_alloc}
-            signal_reason = f'🎯 MR OVERLAY — RSI(2) oversold: {mr_alloc:.0%} {mr_asset} + {1-mr_alloc:.0%} SHV'
+        # Format reason string
+        bull_assets.sort(key=lambda x: x[1], reverse=True)
+        if len(bull_assets) >= 2:
+            signal_reason = f'📈 BULL — Top 2: {bull_assets[0][0]} & {bull_assets[1][0]} (Lev: {lev:.2f}x)'
+        elif len(bull_assets) == 1:
+            signal_reason = f'📈 BULL — 100% {bull_assets[0][0]} (Lev: {lev:.2f}x)'
+        elif signals.get('GLD', False):
+            signal_reason = f'🥇 GLD fallback (Lev: {lev:.2f}x)'
+        elif signals.get('SQQQ', False) and rsi.get('SQQQ', 50) < 90 and p.get('use_sqqq', False):
+            signal_reason = f'🐻 BEAR MARKET — SQQQ (Lev: {lev:.2f}x)'
         else:
-            allocation = {'SHV': 1.0}
-            signal_reason = '💰 CASH — 100% SHV (no trend, no MR signal)'
+            mr_candidates = [(a, rsi.get(a, 50)) for a in ['TQQQ', 'ETH', 'BTC'] if rsi.get(a, 50) < p['mr_oversold']]
+            if mr_candidates:
+                mr_asset = sorted(mr_candidates, key=lambda x: x[1])[0][0]
+                signal_reason = f'🎯 MR OVERLAY — RSI(2) oversold on {mr_asset} (Lev: {lev:.2f}x)'
+            else:
+                signal_reason = '💰 CASH — 100% SHV (no trend, no MR)'
 
     return {
         'version': version,
@@ -536,7 +565,7 @@ def get_today_signals(version: str = 'V503') -> dict:
         'asset_details': detail,
         'bull_assets': [a[0] for a in bull_assets],
         'data_date': data.index[-1].strftime('%Y-%m-%d'),
-        'signal_date': data.index[last_idx].strftime('%Y-%m-%d'),
+        'signal_date': data.index[-1].strftime('%Y-%m-%d'),
     }
 
 
