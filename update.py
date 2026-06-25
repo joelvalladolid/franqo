@@ -11,6 +11,10 @@ import json
 from pathlib import Path
 from datetime import datetime
 
+# Configure stdout to handle emojis in Windows console
+if sys.stdout.encoding != 'utf-8' and hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 # Add path
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent))
