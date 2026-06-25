@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V428 / V503 Paper Trading — SMF Dashboard</title>
+  <meta name="description" content="Live paper trading dashboard for V428 and V503 multi-asset trend-following strategies. Virtual $100K portfolio, daily signals, backtest results." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ─── Header ─────────────────────────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <h1 class="logo-title">SMF Paper Trading</h1>
+          <p class="logo-sub">V428 &amp; V503 Strategy Dashboard</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="last-updated" id="lastUpdated">—</div>
+        <button class="btn-update" id="btnUpdate" onclick="refreshDashboard()">
+          <span class="btn-update-icon">↻</span>
+          Update Today
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Strategy Selector ──────────────────────────────────────────────── -->
+  <div class="strategy-bar">
+    <div class="strategy-bar-inner">
+      <div class="strategy-tabs">
+        <button class="strat-tab active" id="tabV428" onclick="selectStrategy('V428')">
+          <span class="strat-tag">V428</span>
+          <span class="strat-name">Trend-Following 1x</span>
+          <span class="strat-badge badge-stable">Stable</span>
+        </button>
+        <button class="strat-tab" id="tabV503" onclick="selectStrategy('V503')">
+          <span class="strat-tag">V503</span>
+          <span class="strat-name">Full System 2x</span>
+          <span class="strat-badge badge-alpha">Alpha+</span>
+        </button>
+        <button class="strat-tab" id="tabCompare" onclick="selectStrategy('compare')">
+          <span class="strat-tag">≡</span>
+          <span class="strat-name">Compare Both</span>
+          <span class="strat-badge badge-neutral">Side by Side</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Main Content ───────────────────────────────────────────────────── -->
+  <main class="main">
+
+    <!-- ── Today's Signal Banner ────────────────────────────────────────── -->
+    <section class="signal-banner" id="signalBanner">
+      <div class="signal-banner-inner">
+        <div class="signal-left">
+          <div class="signal-date" id="signalDate">TODAY</div>
+          <div class="signal-text" id="signalText">Loading signals...</div>
+        </div>
+        <div class="signal-allocation" id="signalAllocation"></div>
+      </div>
+    </section>
+
+    <!-- ── KPI Cards ─────────────────────────────────────────────────────── -->
+    <section class="kpi-grid" id="kpiGrid">
+      <div class="kpi-card" id="kpiNav">
+        <div class="kpi-label">Portfolio Value</div>
+        <div class="kpi-value" id="kpiNavValue">$100,000</div>
+        <div class="kpi-sub" id="kpiNavSub">+0.00% total return</div>
+      </div>
+      <div class="kpi-card" id="kpiCagr">
+        <div class="kpi-label">Backtest CAGR</div>
+        <div class="kpi-value" id="kpiCagrValue">—</div>
+        <div class="kpi-sub">Compound Annual Growth</div>
+      </div>
+      <div class="kpi-card" id="kpiSharpe">
+        <div class="kpi-label">Sharpe Ratio</div>
+        <div class="kpi-value" id="kpiSharpeValue">—</div>
+        <div class="kpi-sub">Risk-adjusted return</div>
+      </div>
+      <div class="kpi-card" id="kpiMaxdd">
+        <div class="kpi-label">Max Drawdown</div>
+        <div class="kpi-value kpi-neg" id="kpiMaxddValue">—</div>
+        <div class="kpi-sub">Worst peak-to-trough</div>
+      </div>
+      <div class="kpi-card" id="kpiDaily">
+        <div class="kpi-label">Daily Return</div>
+        <div class="kpi-value" id="kpiDailyValue">—</div>
+        <div class="kpi-sub">Avg compounded daily</div>
+      </div>
+      <div class="kpi-card" id="kpiWinrate">
+        <div class="kpi-label">Win Rate</div>
+        <div class="kpi-value" id="kpiWinrateValue">—</div>
+        <div class="kpi-sub">% of profitable days</div>
+      </div>
+    </section>
+
+    <!-- ── Equity Curve Chart ─────────────────────────────────────────────── -->
+    <section class="card chart-card">
+      <div class="card-header">
+        <h2 class="card-title">📈 Equity Curve</h2>
+        <div class="chart-controls">
+          <select class="select-sm" id="selectBacktest" onchange="updateEquityChart()">
+            <option value="">Loading...</option>
+          </select>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="equityChart"></canvas>
+      </div>
+      <div class="chart-legend">
+        <div class="legend-item"><span class="legend-dot strategy-dot"></span> Strategy</div>
+        <div class="legend-item"><span class="legend-dot bench-dot"></span> TQQQ B&amp;H</div>
+      </div>
+    </section>
+
+    <!-- ── Positions & Signals ───────────────────────────────────────────── -->
+    <div class="two-col">
+      <!-- Current Positions -->
+      <section class="card">
+        <div class="card-header">
+          <h2 class="card-title">💼 Current Positions</h2>
+          <span class="tag" id="positionsDate">—</span>
+        </div>
+        <div id="positionsTable">
+          <div class="loading-spinner">Loading...</div>
+        </div>
+      </section>
+
+      <!-- Asset Signals -->
+      <section class="card">
+        <div class="card-header">
+          <h2 class="card-title">🎯 Asset Signals</h2>
+          <span class="tag">Signal Date: <span id="signalDataDate">—</span></span>
+        </div>
+        <div id="assetSignalsTable">
+          <div class="loading-spinner">Loading...</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ── Monthly Returns Heatmap ───────────────────────────────────────── -->
+    <section class="card">
+      <div class="card-header">
+        <h2 class="card-title">📅 Monthly Returns Heatmap</h2>
+        <div class="chart-controls">
+          <select class="select-sm" id="selectHeatmap" onchange="updateHeatmap()">
+            <option value="">Loading...</option>
+          </select>
+        </div>
+      </div>
+      <div id="heatmapContainer" class="heatmap-container">
+        <div class="loading-spinner">Loading...</div>
+      </div>
+    </section>
+
+    <!-- ── Compare Section ──────────────────────────────────────────────── -->
+    <section class="card" id="compareSection" style="display:none">
+      <div class="card-header">
+        <h2 class="card-title">⚖️ Strategy Comparison</h2>
+      </div>
+      <div id="compareTable"></div>
+    </section>
+
+    <!-- ── Trade Log ─────────────────────────────────────────────────────── -->
+    <section class="card">
+      <div class="card-header">
+        <h2 class="card-title">📋 Trade Log</h2>
+        <span class="tag" id="tradeCount">— trades</span>
+      </div>
+      <div class="table-scroll" id="tradeLog">
+        <div class="loading-spinner">Loading...</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ─────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>SMF Paper Trading — V428 &amp; V503 Strategy Dashboard</div>
+      <div>⚠️ <strong>Disclaimer:</strong> This is a paper trading simulation. Past performance does not guarantee future results. Not financial advice.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

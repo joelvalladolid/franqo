@@ -1,0 +1,32 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ── Data / logs that shouldn't be in repo ─────────────────────────────────────
+PRUEBAS.txt
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Local dev server ──────────────────────────────────────────────────────────
+# (no node_modules since this is pure static)
+
+# ── IMPORTANT: dashboard/data/*.json are INCLUDED (needed by Netlify) ─────────
+# If you want to keep portfolio.json private, uncomment:
+# dashboard/data/portfolio.json

@@ -1,0 +1,5 @@
+{
+  "note": "This file will be populated when you run: python backtest/backtest.py",
+  "instructions": "Run: python backtest/backtest.py from the Paper trading directory",
+  "placeholder": true
+}
