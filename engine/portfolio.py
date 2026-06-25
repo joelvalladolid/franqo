@@ -174,7 +174,7 @@ def update_portfolio(version: str, state: dict) -> dict:
             }
             cash -= value
         
-        port['cash'] = max(cash, 0) + nav * target_alloc.get('SHV', 0)
+        port['cash'] = max(cash, 0)
         
         port['trade_log'].append({
             'date': datetime.utcnow().strftime('%Y-%m-%d %H:%M') + ' UTC',
