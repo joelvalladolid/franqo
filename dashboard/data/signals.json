@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T23:12:30.274201Z",
+  "generated_at": "2026-06-25T23:39:35.854580Z",
   "signals": {
     "V428": {
       "version": "V428",
@@ -14,7 +14,7 @@
           "price_prev": 74.44000244140625,
           "sma_fast": 78.78000030517578,
           "sma_slow": 78.29619918823242,
-          "sma_regime": 58.46811870574951,
+          "sma_regime": 58.46811866760254,
           "rsi2": 0.0,
           "momentum": -0.15318848060110046,
           "is_bull": false,
@@ -66,7 +66,7 @@
           "price_prev": 39.922000885009766,
           "sma_fast": 38.449954986572266,
           "sma_slow": 40.055790481567385,
-          "sma_regime": 60.0068430519104,
+          "sma_regime": 60.00684320449829,
           "rsi2": null,
           "momentum": 0.10504009938532377,
           "is_bull": false,
@@ -83,8 +83,8 @@
       "version": "V503",
       "date": "2026-06-25",
       "allocation": {
-        "TQQQ": 0.75,
-        "SHV": 0.25
+        "TQQQ": 0.25,
+        "SHV": 0.75
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 0.92x)",
       "asset_details": {
@@ -93,7 +93,7 @@
           "price_prev": 74.44000244140625,
           "sma_fast": 78.78000030517578,
           "sma_slow": 78.29619918823242,
-          "sma_regime": 58.46811870574951,
+          "sma_regime": 58.46811866760254,
           "rsi2": 0.0,
           "momentum": -0.15318848060110046,
           "is_bull": false,
@@ -145,7 +145,7 @@
           "price_prev": 39.922000885009766,
           "sma_fast": 38.449954986572266,
           "sma_slow": 40.055790481567385,
-          "sma_regime": 60.0068430519104,
+          "sma_regime": 60.00684320449829,
           "rsi2": null,
           "momentum": 0.10504009938532377,
           "is_bull": false,

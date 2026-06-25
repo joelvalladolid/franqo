@@ -47,7 +47,7 @@ PARAMS_V503 = {
     'cooldown': 1,
     'rebal_threshold': 0.02,
     'mr_oversold': 10,
-    'mr_alloc': 0.75,
+    'mr_alloc': 0.25,
     'mr_exit': 50,
     'mom_lookback': 21,
     'mom_split': (0.55, 0.45),
@@ -219,20 +219,23 @@ class StrategyEngine:
                 peak = equity
                 stop_counter = 0
 
+            skip_drawdown_check = False
             if in_stop:
                 cooldown_days += 1
                 if cooldown_days >= p['cooldown']:
                     in_stop = False
                     cooldown_days = 0
-                # Remain in cash during cooldown
-                # Apply existing weights to prices
-                equity = self._apply_weights(equity, weights, data, i, prev_date, date)
-                equities.append(equity)
-                daily_rets.append((equity - equities[-2]) / equities[-2] if equities[-2] > 0 else 0)
-                all_weights.append(weights.copy())
-                continue
+                    skip_drawdown_check = True  # Give it one day to trade MR overlay
+                else:
+                    # Remain in cash during cooldown
+                    # Apply existing weights to prices
+                    equity = self._apply_weights(equity, weights, data, i, prev_date, date)
+                    equities.append(equity)
+                    daily_rets.append((equity - equities[-2]) / equities[-2] if equities[-2] > 0 else 0)
+                    all_weights.append(weights.copy())
+                    continue
 
-            if peak > 0 and (peak - equity) / peak > p['stop_threshold']:
+            if not skip_drawdown_check and peak > 0 and (peak - equity) / peak > p['stop_threshold']:
                 stop_counter += 1
                 if stop_counter >= p['max_stop_cycles']:
                     peak = equity
