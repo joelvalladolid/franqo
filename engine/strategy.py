@@ -251,7 +251,6 @@ class StrategyEngine:
                     in_stop = True
                     cooldown_days = 0
                     days_since_stop = 0
-                    # Liquidate to cash
                     if weights.get('SHV', 0) < 0.99:
                         trades_log.append({
                             'date': date.strftime('%Y-%m-%d'),
@@ -259,6 +258,17 @@ class StrategyEngine:
                             'details': f'Caída del {(peak-equity)/peak:.1%}. Vender todo y pasar a 100% Efectivo (SHV).',
                             'equity': equity,
                         })
+                        
+                        # Apply friction for liquidating to cash
+                        turnover = 0.0
+                        all_syms = set(weights.keys()) | {'SHV'}
+                        for sym in all_syms:
+                            old_w = weights.get(sym, 0)
+                            new_w = 1.0 if sym == 'SHV' else 0.0
+                            turnover += abs(new_w - old_w)
+                        turnover_ratio = turnover / 2.0
+                        equity -= turnover_ratio * equity * 0.001
+                        
                     weights = {'SHV': 1.0}
                     equity = self._apply_weights(equity, weights, data, i, prev_date, date)
                     equities.append(equity)
@@ -315,6 +325,12 @@ class StrategyEngine:
                         'details': f"Ajustar posiciones. Vender actuales y COMPRAR EXACTAMENTE: {new_str}",
                         'equity': equity,
                     })
+                
+                # Apply friction on mobilized capital
+                turnover = sum(abs(new_weights.get(sym, 0) - weights.get(sym, 0)) for sym in all_syms)
+                turnover_ratio = turnover / 2.0
+                equity -= turnover_ratio * equity * 0.001
+                
                 weights = new_weights
 
             # ── Apply returns ────────────────────────────────────────────────
