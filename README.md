@@ -70,12 +70,12 @@ El sistema es robusto y cuenta con dos mecanismos de seguridad distintos que te 
 ## 📊 Estrategias
 
 ### V428 — Trend-Following (1x leverage)
-- **CAGR Histórico:** 74.54%  |  **Sharpe:** 1.608  |  **MaxDD:** -25.9%
+- **CAGR Histórico:** 57.4%  |  **Sharpe:** 1.066  |  **MaxDD:** -51.7%
 - **Activos:** TQQQ (3x Nasdaq) + ETH + GLD + SHV
 - **Lógica:** SMA 15/50 crossover + Filtro de Régimen de 200 días + RSI(2) Mean Reversion (MR).
 
 ### V503 — Full System (hasta 2x leverage)
-- **CAGR Histórico:** 141.52%  |  **Sharpe:** 1.937  |  **MaxDD:** -71.2%  
+- **CAGR Histórico:** 123.4%  |  **Sharpe:** 1.246  |  **MaxDD:** -57.3%  
 - **Activos:** TQQQ + ETH + BTC + SQQQ (bear market) + GLD + SHV
 - **Lógica:** Estrategia V428 completa + Operativa agresiva de mercado bajista (SQQQ) + Apalancamiento por volatilidad objetivo (Target Volatility).
 

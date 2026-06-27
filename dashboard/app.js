@@ -698,7 +698,7 @@ function renderV428Explainer() {
       Invierte en <strong>TQQQ</strong> (3x Nasdaq) y <strong>ETH</strong> (Ethereum) cuando el mercado está alcista,
       y se refugia en <strong>GLD</strong> (Oro) o <strong>SHV</strong> (Efectivo) cuando no hay tendencia clara.
       <br/><br/>
-      🎯 <strong>Resultados del backtest (2020–2026):</strong> CAGR 74.54%, Sharpe 1.608, MaxDD 25.9%, $100K → $3.24M
+      🎯 <strong>Resultados del backtest (2020–2026):</strong> CAGR 57.4%, Sharpe 1.066, MaxDD 51.7%, $100K → $1.89M
     </div>
 
     <h3 style="font-size:15px;font-weight:700;margin-bottom:16px;color:var(--text)">🧒 Reglas del día a día — paso por paso:</h3>
@@ -818,8 +818,8 @@ function renderV503Explainer() {
       <strong>BTC</strong> (Bitcoin), <strong>SQQQ</strong> (apuesta contra el Nasdaq cuando todo cae),
       y <strong>apalancamiento dinámico hasta 2x</strong> controlado por volatilidad.
       <br/><br/>
-      🎯 <strong>Resultados del backtest (2020–2026):</strong> CAGR 141.52%, Sharpe 1.937, MaxDD 71.2%
-      <br/>⚠️ El MaxDD de 71.2% es muy agresivo — significa que en el peor momento, el portafolio perdió más de 2/3 de su valor antes de recuperarse.
+      🎯 <strong>Resultados del backtest (2020–2026):</strong> CAGR 123.4%, Sharpe 1.246, MaxDD 57.3%
+      <br/>⚠️ El MaxDD de 57.3% es agresivo — significa que en el peor momento, el portafolio perdió más de la mitad de su valor antes de recuperarse.
     </div>
 
     <h3 style="font-size:15px;font-weight:700;margin-bottom:16px;color:var(--text)">🧒 Reglas del día a día — paso por paso:</h3>
@@ -963,12 +963,12 @@ function renderV503Explainer() {
         <div class="diff-cell">25% (código) / 75% (documento)</div>
 
         <div class="diff-cell">CAGR Backtest</div>
-        <div class="diff-cell">74.54%</div>
-        <div class="diff-cell highlight">141.52%</div>
+        <div class="diff-cell">57.4%</div>
+        <div class="diff-cell highlight">123.4%</div>
 
         <div class="diff-cell">MaxDD</div>
-        <div class="diff-cell highlight">25.9% (mejor)</div>
-        <div class="diff-cell">71.2% (más arriesgado)</div>
+        <div class="diff-cell highlight">51.7% (mejor)</div>
+        <div class="diff-cell">57.3% (más arriesgado)</div>
       </div>
     </div>
   `;
