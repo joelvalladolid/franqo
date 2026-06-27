@@ -761,6 +761,232 @@ body::before {
   .strategy-tabs { flex-wrap: wrap; }
 }
 
+/* ── Strategy Explainer ────────────────────────────────────────── */
+.explainer-card {
+  border: 1px solid rgba(99,102,241,0.2);
+  background: linear-gradient(135deg, var(--surface), rgba(99,102,241,0.03));
+}
+
+.explainer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  color: var(--text-muted);
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.explainer-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.explainer-arrow {
+  font-size: 10px;
+  transition: transform 0.3s;
+}
+
+.explainer-arrow.collapsed { transform: rotate(180deg); }
+
+.explainer-body {
+  padding: 24px;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.explainer-body.collapsed {
+  max-height: 0 !important;
+  padding: 0 24px;
+  overflow: hidden;
+}
+
+/* Summary box */
+.explainer-summary {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.explainer-summary strong {
+  color: var(--accent2);
+}
+
+/* Steps grid */
+.explainer-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.explainer-step {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.explainer-step:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--accent), #8b5cf6);
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  box-shadow: 0 0 12px var(--accent-glow);
+}
+
+.step-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.step-desc em {
+  color: var(--accent2);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Parameters table */
+.explainer-params {
+  margin-bottom: 24px;
+}
+
+.explainer-params h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.params-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.params-table th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+}
+
+.params-table td {
+  padding: 10px 14px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+}
+
+.params-table td:first-child {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--accent2);
+}
+
+.params-table td:nth-child(2) {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.params-table td:nth-child(3) {
+  color: var(--text-dim);
+}
+
+.params-table tr:hover td {
+  background: var(--surface2);
+}
+
+/* Differences section */
+.explainer-diff {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+
+.explainer-diff h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.diff-grid .diff-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  padding: 8px 12px;
+  background: var(--surface);
+  font-weight: 600;
+}
+
+.diff-grid .diff-cell {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.diff-grid .diff-cell:nth-child(3n+1) {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.diff-grid .diff-cell.highlight {
+  color: var(--green);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .explainer-steps { grid-template-columns: 1fr; }
+  .diff-grid { grid-template-columns: 1fr; }
+  .diff-grid .diff-header:not(:first-child) { display: none; }
+}
+
 /* ── Animations ─────────────────────────────────────────────────── */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
