@@ -92,8 +92,6 @@ def download_data(start: str, end: str = None, period: str = None) -> pd.DataFra
     
     data = pd.DataFrame(all_closes)
     data.index = pd.to_datetime(data.index)
-    # Forward fill missing (e.g. crypto doesn't trade weekdays the same)
-    data = data.ffill()
     return data.dropna(how='all')
 
 
@@ -161,11 +159,20 @@ class StrategyEngine:
                 momentum[asset] = pd.Series(0.0, index=data.index)
                 continue
             
-            signals[asset] = compute_signal(
-                data[asset], p['fast'], p['slow'], p['regime']
-            )
-            rsi[asset] = compute_rsi2(data[asset])
-            momentum[asset] = compute_momentum(data[asset], p['mom_lookback'])
+            # Compute indicators on valid trading days only
+            asset_prices = data[asset].dropna()
+            
+            raw_sig = compute_signal(asset_prices, p['fast'], p['slow'], p['regime'])
+            raw_rsi = compute_rsi2(asset_prices)
+            raw_mom = compute_momentum(asset_prices, p['mom_lookback'])
+            
+            # Align back to full date index and forward-fill
+            signals[asset] = raw_sig.reindex(data.index).ffill().fillna(False)
+            rsi[asset] = raw_rsi.reindex(data.index).ffill().fillna(50.0)
+            momentum[asset] = raw_mom.reindex(data.index).ffill().fillna(0.0)
+
+        # Forward-fill prices for daily portfolio tracking
+        data = data.ffill()
 
         # ── Portfolio State ──────────────────────────────────────────────────
         equity = self.initial_cash
@@ -476,12 +483,21 @@ def get_today_signals(version: str = 'V503') -> dict:
     for asset in ['TQQQ', 'ETH', 'BTC', 'GLD', 'SQQQ']:
         if asset not in data.columns:
             continue
-        prices = data[asset]
-        sma_fast = prices.rolling(p['fast']).mean()
-        sma_slow = prices.rolling(p['slow']).mean()
-        sma_regime = prices.rolling(p['regime']).mean()
-        rsi_vals = compute_rsi2(prices)
-        mom = compute_momentum(prices, p['mom_lookback'])
+            
+        asset_prices = data[asset].dropna()
+        sma_fast_raw = asset_prices.rolling(p['fast']).mean()
+        sma_slow_raw = asset_prices.rolling(p['slow']).mean()
+        sma_regime_raw = asset_prices.rolling(p['regime']).mean()
+        rsi_vals_raw = compute_rsi2(asset_prices)
+        mom_raw = compute_momentum(asset_prices, p['mom_lookback'])
+        
+        # Forward fill to current date
+        prices = asset_prices.reindex(data.index).ffill()
+        sma_fast = sma_fast_raw.reindex(data.index).ffill()
+        sma_slow = sma_slow_raw.reindex(data.index).ffill()
+        sma_regime = sma_regime_raw.reindex(data.index).ffill()
+        rsi_vals = rsi_vals_raw.reindex(data.index).ffill()
+        mom = mom_raw.reindex(data.index).ffill()
         
         is_bull = bool(
             prices.iloc[last_idx] > sma_slow.iloc[last_idx] and
