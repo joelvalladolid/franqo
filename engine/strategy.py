@@ -47,7 +47,7 @@ PARAMS_V503 = {
     'cooldown': 1,
     'rebal_threshold': 0.02,
     'mr_oversold': 10,
-    'mr_alloc': 0.25,
+    'mr_alloc': 0.75,
     'mr_exit': 50,
     'mom_lookback': 21,
     'mom_split': (0.55, 0.45),
