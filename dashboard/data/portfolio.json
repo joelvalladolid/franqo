@@ -26,33 +26,41 @@
             "SHV": 1.0
           },
           "return": 0.0
+        },
+        {
+          "date": "2026-06-27",
+          "nav": 100000.0,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 0.0
         }
       ],
       "trade_log": [],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 17.4%",
-      "last_updated": "2026-06-26T22:47:31.038658Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-06-27T05:37:03.203491Z",
       "action_required": false
     },
     "V503": {
       "version": "V503",
-      "cash": 74219.48084283895,
+      "cash": 24750.79215200637,
       "positions": {
         "ETH": {
-          "shares": 15.720503043504323,
-          "avg_cost": 1573.72998046875,
-          "current_price": 1573.72998046875,
-          "value": 24739.826947612983,
-          "weight": 0.25
+          "shares": 47.09891123240966,
+          "avg_cost": 1576.52001953125,
+          "current_price": 1576.52001953125,
+          "value": 74252.37645601909,
+          "weight": 0.75
         }
       },
-      "nav": 98959.30779045193,
+      "nav": 99003.16860802546,
       "peak_nav": 100000.0,
-      "drawdown": 0.010406922095480695,
-      "total_return": -0.010406922095480695,
-      "total_trades": 3,
+      "drawdown": 0.009968313919745415,
+      "total_return": -0.009968313919745415,
+      "total_trades": 4,
       "history": [
         {
           "date": "2026-06-25",
@@ -69,6 +77,15 @@
             "SHV": 0.75
           },
           "return": -1.041
+        },
+        {
+          "date": "2026-06-27",
+          "nav": 99003.17,
+          "weights": {
+            "ETH": 0.75,
+            "SHV": 0.25
+          },
+          "return": -0.997
         }
       ],
       "trade_log": [
@@ -95,14 +112,22 @@
           "to": "ETH:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:25%, SHV:75%",
           "nav": 98959.31
+        },
+        {
+          "date": "2026-06-27 05:37 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:25%, SHV:75%",
+          "to": "ETH:75%, SHV:25%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:75%, SHV:25%",
+          "nav": 99003.17
         }
       ],
       "current_allocation": {
-        "ETH": 0.25,
-        "SHV": 0.75
+        "ETH": 0.75,
+        "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 0.92x)",
-      "last_updated": "2026-06-26T22:47:31.548805Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 0.97x)",
+      "last_updated": "2026-06-27T05:37:04.020279Z",
       "action_required": true
     }
   }
