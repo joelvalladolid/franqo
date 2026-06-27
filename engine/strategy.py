@@ -211,7 +211,7 @@ class StrategyEngine:
             lev = 1.0
             if p.get('target_vol') and len(daily_returns) >= 5:
                 vol_lookback = p.get('vol_lookback', 21)
-                recent_vol = np.std(daily_returns[-vol_lookback:]) * np.sqrt(252)
+                recent_vol = np.std(daily_returns[-vol_lookback:]) * np.sqrt(365)
                 if recent_vol > 0:
                     lev = p['target_vol'] / recent_vol
                     # Post-stop leverage cap
@@ -414,11 +414,11 @@ class StrategyEngine:
 
         # Sharpe (annualized, risk-free=0)
         mu = returns.mean() * 252
-        sigma = returns.std() * np.sqrt(252)
+        sigma = returns.std() * np.sqrt(365)
         sharpe = mu / sigma if sigma > 0 else 0
 
         # Sortino
-        downside = returns[returns < 0].std() * np.sqrt(252)
+        downside = returns[returns < 0].std() * np.sqrt(365)
         sortino = mu / downside if downside > 0 else 0
 
         # Max Drawdown
