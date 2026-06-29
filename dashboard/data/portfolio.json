@@ -34,6 +34,14 @@
             "SHV": 1.0
           },
           "return": 0.0
+        },
+        {
+          "date": "2026-06-29",
+          "nav": 100000.0,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 0.0
         }
       ],
       "trade_log": [],
@@ -41,7 +49,7 @@
         "SHV": 1.0
       },
       "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
-      "last_updated": "2026-06-27T05:37:03.203491Z",
+      "last_updated": "2026-06-29T22:38:13.421092Z",
       "action_required": false
     },
     "V503": {
@@ -51,15 +59,15 @@
         "ETH": {
           "shares": 47.09891123240966,
           "avg_cost": 1576.52001953125,
-          "current_price": 1576.52001953125,
-          "value": 74252.37645601909,
+          "current_price": 1612.4100341796875,
+          "value": 75942.75707007574,
           "weight": 0.75
         }
       },
-      "nav": 99003.16860802546,
-      "peak_nav": 100000.0,
-      "drawdown": 0.009968313919745415,
-      "total_return": -0.009968313919745415,
+      "nav": 100693.5492220821,
+      "peak_nav": 100693.5492220821,
+      "drawdown": 0.0,
+      "total_return": 0.006935492220821034,
       "total_trades": 4,
       "history": [
         {
@@ -86,6 +94,15 @@
             "SHV": 0.25
           },
           "return": -0.997
+        },
+        {
+          "date": "2026-06-29",
+          "nav": 100693.55,
+          "weights": {
+            "ETH": 0.75,
+            "SHV": 0.25
+          },
+          "return": 0.694
         }
       ],
       "trade_log": [
@@ -126,9 +143,9 @@
         "ETH": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 0.97x)",
-      "last_updated": "2026-06-27T05:37:04.020279Z",
-      "action_required": true
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 1.74x)",
+      "last_updated": "2026-06-29T22:38:13.844054Z",
+      "action_required": false
     }
   }
 }
