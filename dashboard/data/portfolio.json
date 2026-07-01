@@ -50,14 +50,22 @@
             "SHV": 1.0
           },
           "return": 0.0
+        },
+        {
+          "date": "2026-07-01",
+          "nav": 100000.0,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 0.0
         }
       ],
       "trade_log": [],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 19.0%",
-      "last_updated": "2026-06-30T22:53:00.124661Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-07-01T22:49:44.366582Z",
       "action_required": false
     },
     "V503": {
@@ -65,18 +73,18 @@
       "cash": 0,
       "positions": {
         "TQQQ": {
-          "shares": 2115.295171314114,
-          "avg_cost": 81.0,
-          "current_price": 81.0,
-          "value": 171338.90887644325,
-          "weight": 1.740760435193982
+          "shares": 3661.6954765552755,
+          "avg_cost": 77.45999908447266,
+          "current_price": 77.45999908447266,
+          "value": 283634.9282615893,
+          "weight": 1.7310565098489161
         }
       },
-      "nav": 98427.62129261633,
-      "peak_nav": 100693.5492220821,
-      "drawdown": 0.022503208467388666,
-      "total_return": -0.01572378707383672,
-      "total_trades": 5,
+      "nav": 163850.7620333807,
+      "peak_nav": 163850.7620333807,
+      "drawdown": 0.0,
+      "total_return": 0.6385076203338071,
+      "total_trades": 6,
       "history": [
         {
           "date": "2026-06-25",
@@ -119,6 +127,14 @@
             "TQQQ": 1.740760435193982
           },
           "return": -1.572
+        },
+        {
+          "date": "2026-07-01",
+          "nav": 163850.76,
+          "weights": {
+            "TQQQ": 1.7310565098489161
+          },
+          "return": 63.851
         }
       ],
       "trade_log": [
@@ -161,13 +177,21 @@
           "to": "TQQQ:174%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:174%",
           "nav": 98427.62
+        },
+        {
+          "date": "2026-07-01 22:49 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "TQQQ:100%",
+          "to": "TQQQ:173%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:173%",
+          "nav": 163850.76
         }
       ],
       "current_allocation": {
-        "TQQQ": 1.740760435193982
+        "TQQQ": 1.7310565098489161
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 100% TQQQ (Lev: 1.74x)",
-      "last_updated": "2026-06-30T22:53:00.589248Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 100% TQQQ (Lev: 1.73x)",
+      "last_updated": "2026-07-01T22:49:44.740069Z",
       "action_required": true
     }
   }
