@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-03T22:37:10.228565Z",
+  "generated_at": "2026-07-06T22:46:03.301477Z",
   "signals": {
     "V428": {
       "version": "V428",
-      "date": "2026-07-03",
+      "date": "2026-07-06",
       "allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 22.8%",
       "asset_details": {
         "TQQQ": {
           "price": 73.3499984741211,
-          "price_prev": 77.45999908447266,
+          "price_prev": 73.3499984741211,
           "sma_fast": 77.63733367919922,
           "sma_slow": 74.86659973144532,
-          "sma_regime": 57.44152725219727,
+          "sma_regime": 57.44152727127075,
           "rsi2": 0.0,
           "momentum": -0.1590231890903684,
           "is_bull": false,
@@ -23,26 +23,26 @@
           "above_regime": true
         },
         "ETH": {
-          "price": 1698.16943359375,
-          "price_prev": 1608.960693359375,
-          "sma_fast": 1643.104825846354,
-          "sma_slow": 1835.6639331054687,
-          "sma_regime": 2280.0403033447265,
+          "price": 1783.0059814453125,
+          "price_prev": 1779.032958984375,
+          "sma_fast": 1653.6875162760416,
+          "sma_slow": 1808.3547729492188,
+          "sma_regime": 2262.834253540039,
           "rsi2": 49.22178988326848,
-          "momentum": 0.015481129979926678,
+          "momentum": 0.03385843123798127,
           "is_bull": false,
           "above_fast": true,
           "above_slow": false,
           "above_regime": false
         },
         "BTC": {
-          "price": 61485.30078125,
-          "price_prev": 60003.7578125,
-          "sma_fast": 61395.108072916664,
-          "sma_slow": 67734.805234375,
-          "sma_regime": 75069.6943359375,
+          "price": 63547.8828125,
+          "price_prev": 63088.3046875,
+          "sma_fast": 61295.33489583333,
+          "sma_slow": 66753.445625,
+          "sma_regime": 74713.55865234375,
           "rsi2": 47.7744297391931,
-          "momentum": -0.03265763786418452,
+          "momentum": -0.032909793220274874,
           "is_bull": false,
           "above_fast": true,
           "above_slow": false,
@@ -50,7 +50,7 @@
         },
         "GLD": {
           "price": 378.1300048828125,
-          "price_prev": 370.6000061035156,
+          "price_prev": 378.1300048828125,
           "sma_fast": 379.9580017089844,
           "sma_slow": 406.3735986328125,
           "sma_regime": 409.8961000061035,
@@ -63,10 +63,10 @@
         },
         "SQQQ": {
           "price": 39.95000076293945,
-          "price_prev": 37.880001068115234,
+          "price_prev": 39.95000076293945,
           "sma_fast": 38.530329895019534,
           "sma_slow": 42.2561247253418,
-          "sma_regime": 61.98534595489502,
+          "sma_regime": 61.985346488952636,
           "rsi2": 45.90644840340334,
           "momentum": 0.09965991630421378,
           "is_bull": false,
@@ -76,24 +76,24 @@
         }
       },
       "bull_assets": [],
-      "data_date": "2026-07-02",
-      "signal_date": "2026-07-02"
+      "data_date": "2026-07-05",
+      "signal_date": "2026-07-05"
     },
     "V503": {
       "version": "V503",
-      "date": "2026-07-03",
+      "date": "2026-07-06",
       "allocation": {
         "TQQQ": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.54x)",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.60x)",
       "asset_details": {
         "TQQQ": {
           "price": 73.3499984741211,
-          "price_prev": 77.45999908447266,
+          "price_prev": 73.3499984741211,
           "sma_fast": 77.63733367919922,
           "sma_slow": 74.86659973144532,
-          "sma_regime": 57.44152725219727,
+          "sma_regime": 57.44152727127075,
           "rsi2": 0.0,
           "momentum": -0.1590231890903684,
           "is_bull": false,
@@ -102,26 +102,26 @@
           "above_regime": true
         },
         "ETH": {
-          "price": 1698.16943359375,
-          "price_prev": 1608.960693359375,
-          "sma_fast": 1643.104825846354,
-          "sma_slow": 1835.6639331054687,
-          "sma_regime": 2280.0403033447265,
+          "price": 1783.0059814453125,
+          "price_prev": 1779.032958984375,
+          "sma_fast": 1653.6875162760416,
+          "sma_slow": 1808.3547729492188,
+          "sma_regime": 2262.834253540039,
           "rsi2": 49.22178988326848,
-          "momentum": 0.015481129979926678,
+          "momentum": 0.03385843123798127,
           "is_bull": false,
           "above_fast": true,
           "above_slow": false,
           "above_regime": false
         },
         "BTC": {
-          "price": 61485.30078125,
-          "price_prev": 60003.7578125,
-          "sma_fast": 61395.108072916664,
-          "sma_slow": 67734.805234375,
-          "sma_regime": 75069.6943359375,
+          "price": 63547.8828125,
+          "price_prev": 63088.3046875,
+          "sma_fast": 61295.33489583333,
+          "sma_slow": 66753.445625,
+          "sma_regime": 74713.55865234375,
           "rsi2": 47.7744297391931,
-          "momentum": -0.03265763786418452,
+          "momentum": -0.032909793220274874,
           "is_bull": false,
           "above_fast": true,
           "above_slow": false,
@@ -129,7 +129,7 @@
         },
         "GLD": {
           "price": 378.1300048828125,
-          "price_prev": 370.6000061035156,
+          "price_prev": 378.1300048828125,
           "sma_fast": 379.9580017089844,
           "sma_slow": 406.3735986328125,
           "sma_regime": 409.8961000061035,
@@ -142,10 +142,10 @@
         },
         "SQQQ": {
           "price": 39.95000076293945,
-          "price_prev": 37.880001068115234,
+          "price_prev": 39.95000076293945,
           "sma_fast": 38.530329895019534,
           "sma_slow": 42.2561247253418,
-          "sma_regime": 61.98534595489502,
+          "sma_regime": 61.985346488952636,
           "rsi2": 45.90644840340334,
           "momentum": 0.09965991630421378,
           "is_bull": false,
@@ -155,8 +155,8 @@
         }
       },
       "bull_assets": [],
-      "data_date": "2026-07-02",
-      "signal_date": "2026-07-02"
+      "data_date": "2026-07-05",
+      "signal_date": "2026-07-05"
     }
   }
 }

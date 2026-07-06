@@ -74,14 +74,22 @@
             "SHV": 1.0
           },
           "return": 0.0
+        },
+        {
+          "date": "2026-07-06",
+          "nav": 100000.0,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 0.0
         }
       ],
       "trade_log": [],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
-      "last_updated": "2026-07-03T22:37:09.427103Z",
+      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 22.8%",
+      "last_updated": "2026-07-06T22:46:02.492233Z",
       "action_required": false
     },
     "V503": {
@@ -91,15 +99,15 @@
         "TQQQ": {
           "shares": 4493.9527822237405,
           "avg_cost": 73.3499984741211,
-          "current_price": 73.3499984741211,
-          "value": 329631.4297188836,
+          "current_price": 76.41999816894531,
+          "value": 343427.86338886496,
           "weight": 0.75
         }
       },
-      "nav": 439508.5729585115,
-      "peak_nav": 439508.5729585115,
+      "nav": 453305.00662849285,
+      "peak_nav": 453305.00662849285,
       "drawdown": 0.0,
-      "total_return": 3.395085729585115,
+      "total_return": 3.5330500662849285,
       "total_trades": 8,
       "history": [
         {
@@ -168,6 +176,15 @@
             "SHV": 0.25
           },
           "return": 339.509
+        },
+        {
+          "date": "2026-07-06",
+          "nav": 453305.01,
+          "weights": {
+            "TQQQ": 0.75,
+            "SHV": 0.25
+          },
+          "return": 353.305
         }
       ],
       "trade_log": [
@@ -240,9 +257,9 @@
         "TQQQ": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.54x)",
-      "last_updated": "2026-07-03T22:37:09.804266Z",
-      "action_required": true
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.60x)",
+      "last_updated": "2026-07-06T22:46:02.851455Z",
+      "action_required": false
     }
   }
 }
