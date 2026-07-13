@@ -114,14 +114,22 @@
             "SHV": 1.0
           },
           "return": 0.0
+        },
+        {
+          "date": "2026-07-13",
+          "nav": 100000.0,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 0.0
         }
       ],
       "trade_log": [],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 27.1%",
-      "last_updated": "2026-07-10T22:33:54.678940Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-07-13T22:30:36.728830Z",
       "action_required": false
     },
     "V503": {
@@ -241,6 +249,14 @@
             "SHV": 1.0
           },
           "return": 600.938
+        },
+        {
+          "date": "2026-07-13",
+          "nav": 700938.19,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 600.938
         }
       ],
       "trade_log": [
@@ -328,8 +344,8 @@
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 20.5%",
-      "last_updated": "2026-07-10T22:33:55.001557Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-07-13T22:30:37.084101Z",
       "action_required": false
     }
   }
