@@ -4,21 +4,13 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 75000.0,
-      "positions": {
-        "TQQQ": {
-          "shares": 370.2058411359607,
-          "avg_cost": 67.52999877929688,
-          "current_price": 70.27999877929688,
-          "value": 26018.066063123893,
-          "weight": 0.25
-        }
-      },
-      "nav": 101018.0660631239,
+      "cash": 99544.64839709277,
+      "positions": {},
+      "nav": 99544.64839709277,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.003978697513971941,
-      "total_return": 0.010180660631239007,
-      "total_trades": 1,
+      "drawdown": 0.018506350240061673,
+      "total_return": -0.004553516029072343,
+      "total_trades": 2,
       "history": [
         {
           "date": "2026-06-25",
@@ -190,6 +182,14 @@
             "SHV": 0.75
           },
           "return": 1.018
+        },
+        {
+          "date": "2026-07-23",
+          "nav": 99544.65,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": -0.455
         }
       ],
       "trade_log": [
@@ -200,33 +200,32 @@
           "to": "TQQQ:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:25%, SHV:75%",
           "nav": 100000.0
+        },
+        {
+          "date": "2026-07-23 22:32 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "TQQQ:25%, SHV:75%",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": 99544.65
         }
       ],
       "current_allocation": {
-        "TQQQ": 0.25,
-        "SHV": 0.75
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-07-22T22:35:56.712392Z",
-      "action_required": false
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-07-23T22:32:37.610431Z",
+      "action_required": true
     },
     "V503": {
       "version": "V503",
-      "cash": 175234.54811133188,
-      "positions": {
-        "TQQQ": {
-          "shares": 7784.742393556275,
-          "avg_cost": 67.52999877929688,
-          "current_price": 70.27999877929688,
-          "value": 547111.6859162756,
-          "weight": 0.75
-        }
-      },
-      "nav": 722346.2340276075,
+      "cash": 691362.9925612613,
+      "positions": {},
+      "nav": 691362.9925612613,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.01161060865061822,
-      "total_return": 6.2234623402760745,
-      "total_trades": 11,
+      "drawdown": 0.054005108313479946,
+      "total_return": 5.913629925612613,
+      "total_trades": 12,
       "history": [
         {
           "date": "2026-06-25",
@@ -403,6 +402,14 @@
             "SHV": 0.25
           },
           "return": 622.346
+        },
+        {
+          "date": "2026-07-23",
+          "nav": 691362.99,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 591.363
         }
       ],
       "trade_log": [
@@ -493,15 +500,22 @@
           "to": "TQQQ:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:75%, SHV:25%",
           "nav": 700938.19
+        },
+        {
+          "date": "2026-07-23 22:32 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "TQQQ:75%, SHV:25%",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": 691362.99
         }
       ],
       "current_allocation": {
-        "TQQQ": 0.75,
-        "SHV": 0.25
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-07-22T22:35:57.151332Z",
-      "action_required": false
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-07-23T22:32:38.280476Z",
+      "action_required": true
     }
   }
 }
