@@ -9,15 +9,15 @@
         "TQQQ": {
           "shares": 388.8462828011436,
           "avg_cost": 64.0,
-          "current_price": 57.75,
-          "value": 22455.872831766043,
+          "current_price": 63.29999923706055,
+          "value": 24613.96940464622,
           "weight": 0.25
         }
       },
-      "nav": 97114.35912958562,
+      "nav": 99272.4557024658,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.04246859754865393,
-      "total_return": -0.028856408704143834,
+      "drawdown": 0.021190124863702982,
+      "total_return": -0.007275442975342012,
       "total_trades": 3,
       "history": [
         {
@@ -234,6 +234,15 @@
             "SHV": 0.75
           },
           "return": -2.886
+        },
+        {
+          "date": "2026-07-30",
+          "nav": 99272.46,
+          "weights": {
+            "TQQQ": 0.25,
+            "SHV": 0.75
+          },
+          "return": -0.728
         }
       ],
       "trade_log": [
@@ -267,7 +276,7 @@
         "SHV": 0.75
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-07-29T22:31:03.399524Z",
+      "last_updated": "2026-07-30T22:38:48.734703Z",
       "action_required": false
     },
     "V503": {
@@ -277,15 +286,15 @@
         "TQQQ": {
           "shares": 8101.910069077281,
           "avg_cost": 64.0,
-          "current_price": 57.75,
-          "value": 467885.30648921296,
+          "current_price": 63.29999923706055,
+          "value": 512850.90119132504,
           "weight": 0.75
         }
       },
-      "nav": 640726.0546295282,
+      "nav": 685691.6493316403,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.12329184354442636,
-      "total_return": 5.407260546295282,
+      "drawdown": 0.06176523111719938,
+      "total_return": 5.856916493316404,
       "total_trades": 13,
       "history": [
         {
@@ -507,6 +516,15 @@
             "SHV": 0.25
           },
           "return": 540.726
+        },
+        {
+          "date": "2026-07-30",
+          "nav": 685691.65,
+          "weights": {
+            "TQQQ": 0.75,
+            "SHV": 0.25
+          },
+          "return": 585.692
         }
       ],
       "trade_log": [
@@ -620,7 +638,7 @@
         "SHV": 0.25
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
-      "last_updated": "2026-07-29T22:31:03.932796Z",
+      "last_updated": "2026-07-30T22:38:49.073479Z",
       "action_required": false
     }
   }
