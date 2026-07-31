@@ -4,21 +4,21 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 74658.48629781957,
+      "cash": 74839.30062032076,
       "positions": {
-        "TQQQ": {
-          "shares": 388.8462828011436,
-          "avg_cost": 64.0,
-          "current_price": 63.29999923706055,
-          "value": 24613.96940464622,
+        "BTC": {
+          "shares": 0.39630922659425516,
+          "avg_cost": 62946.890625,
+          "current_price": 62946.890625,
+          "value": 24946.433540106922,
           "weight": 0.25
         }
       },
-      "nav": 99272.4557024658,
+      "nav": 99785.73416042769,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.021190124863702982,
-      "total_return": -0.007275442975342012,
-      "total_trades": 3,
+      "drawdown": 0.01612928477676486,
+      "total_return": -0.0021426583957231196,
+      "total_trades": 4,
       "history": [
         {
           "date": "2026-06-25",
@@ -243,6 +243,15 @@
             "SHV": 0.75
           },
           "return": -0.728
+        },
+        {
+          "date": "2026-07-31",
+          "nav": 99785.73,
+          "weights": {
+            "BTC": 0.25,
+            "SHV": 0.75
+          },
+          "return": -0.214
         }
       ],
       "trade_log": [
@@ -269,33 +278,41 @@
           "to": "TQQQ:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:25%, SHV:75%",
           "nav": 99544.65
+        },
+        {
+          "date": "2026-07-31 22:34 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "TQQQ:25%, SHV:75%",
+          "to": "BTC:25%, SHV:75%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:25%, SHV:75%",
+          "nav": 99785.73
         }
       ],
       "current_allocation": {
-        "TQQQ": 0.25,
+        "BTC": 0.25,
         "SHV": 0.75
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-07-30T22:38:48.734703Z",
-      "action_required": false
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 1.00x)",
+      "last_updated": "2026-07-31T22:34:37.723107Z",
+      "action_required": true
     },
     "V503": {
       "version": "V503",
-      "cash": 172840.7481403153,
+      "cash": 174096.54976416245,
       "positions": {
-        "TQQQ": {
-          "shares": 8101.910069077281,
-          "avg_cost": 64.0,
-          "current_price": 63.29999923706055,
-          "value": 512850.90119132504,
+        "BTC": {
+          "shares": 8.297306572360775,
+          "avg_cost": 62946.890625,
+          "current_price": 62946.890625,
+          "value": 522289.64929248736,
           "weight": 0.75
         }
       },
-      "nav": 685691.6493316403,
+      "nav": 696386.1990566498,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.06176523111719938,
-      "total_return": 5.856916493316404,
-      "total_trades": 13,
+      "drawdown": 0.04713183373029776,
+      "total_return": 5.963861990566498,
+      "total_trades": 14,
       "history": [
         {
           "date": "2026-06-25",
@@ -525,6 +542,15 @@
             "SHV": 0.25
           },
           "return": 585.692
+        },
+        {
+          "date": "2026-07-31",
+          "nav": 696386.2,
+          "weights": {
+            "BTC": 0.75,
+            "SHV": 0.25
+          },
+          "return": 596.386
         }
       ],
       "trade_log": [
@@ -631,15 +657,23 @@
           "to": "TQQQ:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:75%, SHV:25%",
           "nav": 691362.99
+        },
+        {
+          "date": "2026-07-31 22:34 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "TQQQ:75%, SHV:25%",
+          "to": "BTC:75%, SHV:25%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:75%, SHV:25%",
+          "nav": 696386.2
         }
       ],
       "current_allocation": {
-        "TQQQ": 0.75,
+        "BTC": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
-      "last_updated": "2026-07-30T22:38:49.073479Z",
-      "action_required": false
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 2.00x)",
+      "last_updated": "2026-07-31T22:34:38.294711Z",
+      "action_required": true
     }
   }
 }
