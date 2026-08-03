@@ -4,21 +4,13 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 74839.30062032076,
-      "positions": {
-        "BTC": {
-          "shares": 0.39630922659425516,
-          "avg_cost": 62946.890625,
-          "current_price": 62946.890625,
-          "value": 24946.433540106922,
-          "weight": 0.25
-        }
-      },
-      "nav": 99785.73416042769,
+      "cash": 99991.96202613375,
+      "positions": {},
+      "nav": 99991.96202613375,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.01612928477676486,
-      "total_return": -0.0021426583957231196,
-      "total_trades": 4,
+      "drawdown": 0.014095912377008999,
+      "total_return": -8.03797386624501e-05,
+      "total_trades": 5,
       "history": [
         {
           "date": "2026-06-25",
@@ -252,6 +244,14 @@
             "SHV": 0.75
           },
           "return": -0.214
+        },
+        {
+          "date": "2026-08-03",
+          "nav": 99991.96,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": -0.008
         }
       ],
       "trade_log": [
@@ -286,33 +286,32 @@
           "to": "BTC:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:25%, SHV:75%",
           "nav": 99785.73
+        },
+        {
+          "date": "2026-08-03 22:34 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "BTC:25%, SHV:75%",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": 99991.96
         }
       ],
       "current_allocation": {
-        "BTC": 0.25,
-        "SHV": 0.75
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 1.00x)",
-      "last_updated": "2026-07-31T22:34:37.723107Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-08-03T22:34:09.143620Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
-      "cash": 174096.54976416245,
-      "positions": {
-        "BTC": {
-          "shares": 8.297306572360775,
-          "avg_cost": 62946.890625,
-          "current_price": 62946.890625,
-          "value": 522289.64929248736,
-          "weight": 0.75
-        }
-      },
-      "nav": 696386.1990566498,
+      "cash": 700703.8775528881,
+      "positions": {},
+      "nav": 700703.8775528881,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.04713183373029776,
-      "total_return": 5.963861990566498,
-      "total_trades": 14,
+      "drawdown": 0.041223936076918155,
+      "total_return": 6.007038775528882,
+      "total_trades": 15,
       "history": [
         {
           "date": "2026-06-25",
@@ -551,6 +550,14 @@
             "SHV": 0.25
           },
           "return": 596.386
+        },
+        {
+          "date": "2026-08-03",
+          "nav": 700703.88,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 600.704
         }
       ],
       "trade_log": [
@@ -665,14 +672,21 @@
           "to": "BTC:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:75%, SHV:25%",
           "nav": 696386.2
+        },
+        {
+          "date": "2026-08-03 22:34 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "BTC:75%, SHV:25%",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": 700703.88
         }
       ],
       "current_allocation": {
-        "BTC": 0.75,
-        "SHV": 0.25
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 2.00x)",
-      "last_updated": "2026-07-31T22:34:38.294711Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-08-03T22:34:10.029369Z",
       "action_required": true
     }
   }
