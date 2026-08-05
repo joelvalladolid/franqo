@@ -260,6 +260,14 @@
             "SHV": 1.0
           },
           "return": -0.008
+        },
+        {
+          "date": "2026-08-05",
+          "nav": 99991.96,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": -0.008
         }
       ],
       "trade_log": [
@@ -308,7 +316,7 @@
         "SHV": 1.0
       },
       "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-08-04T22:38:10.269362Z",
+      "last_updated": "2026-08-05T22:35:53.381677Z",
       "action_required": false
     },
     "V503": {
@@ -574,6 +582,14 @@
             "SHV": 1.0
           },
           "return": 600.704
+        },
+        {
+          "date": "2026-08-05",
+          "nav": 700703.88,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": 600.704
         }
       ],
       "trade_log": [
@@ -702,7 +718,7 @@
         "SHV": 1.0
       },
       "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-08-04T22:38:10.943259Z",
+      "last_updated": "2026-08-05T22:35:53.725200Z",
       "action_required": false
     }
   }
