@@ -9,15 +9,15 @@
         "TQQQ": {
           "shares": 347.04971442701805,
           "avg_cost": 72.02999877929688,
-          "current_price": 72.02999877929688,
-          "value": 24997.99050653344,
+          "current_price": 74.47000122070312,
+          "value": 25844.792657024704,
           "weight": 0.25
         }
       },
-      "nav": 99991.96202613375,
+      "nav": 100838.76417662502,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.014095912377008999,
-      "total_return": -8.03797386624501e-05,
+      "drawdown": 0.0057465842444229575,
+      "total_return": 0.008387641766250162,
       "total_trades": 6,
       "history": [
         {
@@ -342,8 +342,8 @@
         "SHV": 0.75
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-08-07T01:03:53.635634Z",
-      "action_required": true
+      "last_updated": "2026-08-07T22:07:45.418574Z",
+      "action_required": false
     },
     "V503": {
       "version": "V503",
@@ -352,15 +352,15 @@
         "TQQQ": {
           "shares": 7295.958865345909,
           "avg_cost": 72.02999877929688,
-          "current_price": 72.02999877929688,
-          "value": 525527.908164666,
+          "current_price": 74.47000122070312,
+          "value": 543330.0656085096,
           "weight": 0.75
         }
       },
-      "nav": 700703.8775528881,
+      "nav": 718506.0349967317,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.041223936076918155,
-      "total_return": 6.007038775528882,
+      "drawdown": 0.016865169142509375,
+      "total_return": 6.1850603499673165,
       "total_trades": 16,
       "history": [
         {
@@ -770,8 +770,8 @@
         "SHV": 0.25
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
-      "last_updated": "2026-08-07T01:03:54.301500Z",
-      "action_required": true
+      "last_updated": "2026-08-07T22:07:45.840131Z",
+      "action_required": false
     }
   }
 }
