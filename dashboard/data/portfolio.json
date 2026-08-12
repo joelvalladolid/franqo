@@ -4,21 +4,21 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 75454.68112756943,
+      "cash": 75413.4791171695,
       "positions": {
-        "ETH": {
-          "shares": 13.366474370936944,
-          "avg_cost": 1881.68994140625,
-          "current_price": 1881.68994140625,
-          "value": 25151.56037585648,
+        "TQQQ": {
+          "shares": 336.9681888279153,
+          "avg_cost": 74.5999984741211,
+          "current_price": 74.5999984741211,
+          "value": 25137.82637238983,
           "weight": 0.25
         }
       },
-      "nav": 100606.24150342592,
+      "nav": 100551.30548955932,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.00803921906553089,
-      "total_return": 0.006062415034259174,
-      "total_trades": 8,
+      "drawdown": 0.00858087901030358,
+      "total_return": 0.005513054895593231,
+      "total_trades": 9,
       "history": [
         {
           "date": "2026-06-25",
@@ -302,6 +302,15 @@
             "SHV": 0.75
           },
           "return": 0.606
+        },
+        {
+          "date": "2026-08-12",
+          "nav": 100551.31,
+          "weights": {
+            "TQQQ": 0.25,
+            "SHV": 0.75
+          },
+          "return": 0.551
         }
       ],
       "trade_log": [
@@ -368,33 +377,41 @@
           "to": "ETH:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:25%, SHV:75%",
           "nav": 100606.24
+        },
+        {
+          "date": "2026-08-12 22:20 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:25%, SHV:75%",
+          "to": "TQQQ:25%, SHV:75%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:25%, SHV:75%",
+          "nav": 100551.31
         }
       ],
       "current_allocation": {
-        "ETH": 0.25,
+        "TQQQ": 0.25,
         "SHV": 0.75
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 1.00x)",
-      "last_updated": "2026-08-11T22:20:08.307956Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
+      "last_updated": "2026-08-12T22:20:06.014600Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
-      "cash": 178404.43897906237,
+      "cash": 178112.18587665586,
       "positions": {
-        "ETH": {
-          "shares": 284.4322569621669,
-          "avg_cost": 1881.68994140625,
-          "current_price": 1881.68994140625,
-          "value": 535213.3169371872,
+        "TQQQ": {
+          "shares": 7162.688586586633,
+          "avg_cost": 74.5999984741211,
+          "current_price": 74.5999984741211,
+          "value": 534336.5576299675,
           "weight": 0.75
         }
       },
-      "nav": 713617.7559162496,
+      "nav": 712448.7435066233,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.023553821976157213,
-      "total_return": 6.136177559162496,
-      "total_trades": 18,
+      "drawdown": 0.025153386574961818,
+      "total_return": 6.124487435066233,
+      "total_trades": 19,
       "history": [
         {
           "date": "2026-06-25",
@@ -683,6 +700,15 @@
             "SHV": 0.25
           },
           "return": 613.618
+        },
+        {
+          "date": "2026-08-12",
+          "nav": 712448.74,
+          "weights": {
+            "TQQQ": 0.75,
+            "SHV": 0.25
+          },
+          "return": 612.449
         }
       ],
       "trade_log": [
@@ -829,14 +855,22 @@
           "to": "ETH:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:75%, SHV:25%",
           "nav": 713617.76
+        },
+        {
+          "date": "2026-08-12 22:20 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:75%, SHV:25%",
+          "to": "TQQQ:75%, SHV:25%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:75%, SHV:25%",
+          "nav": 712448.74
         }
       ],
       "current_allocation": {
-        "ETH": 0.75,
+        "TQQQ": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 2.00x)",
-      "last_updated": "2026-08-11T22:20:08.814534Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
+      "last_updated": "2026-08-12T22:20:06.339216Z",
       "action_required": true
     }
   }
