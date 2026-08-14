@@ -9,15 +9,15 @@
         "BTC": {
           "shares": 0.39914258884172915,
           "avg_cost": 63517.76171875,
-          "current_price": 63517.76171875,
-          "value": 25352.643849853954,
+          "current_price": 62843.21875,
+          "value": 25083.405023022093,
           "weight": 0.25
         }
       },
-      "nav": 101410.57539941581,
+      "nav": 101141.33657258395,
       "peak_nav": 101421.59189867423,
-      "drawdown": 0.00010862084741702579,
-      "total_return": 0.014105753994158149,
+      "drawdown": 0.0027632708266921036,
+      "total_return": 0.01141336572583954,
       "total_trades": 10,
       "history": [
         {
@@ -320,6 +320,15 @@
             "SHV": 0.75
           },
           "return": 1.411
+        },
+        {
+          "date": "2026-08-14",
+          "nav": 101141.34,
+          "weights": {
+            "BTC": 0.25,
+            "SHV": 0.75
+          },
+          "return": 1.141
         }
       ],
       "trade_log": [
@@ -409,8 +418,8 @@
         "SHV": 0.75
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 1.00x)",
-      "last_updated": "2026-08-13T22:20:25.180991Z",
-      "action_required": true
+      "last_updated": "2026-08-14T21:51:55.745732Z",
+      "action_required": false
     },
     "V503": {
       "version": "V503",
@@ -419,15 +428,15 @@
         "BTC": {
           "shares": 8.62806246814159,
           "avg_cost": 63517.76171875,
-          "current_price": 63517.76171875,
-          "value": 548035.2159459075,
+          "current_price": 62843.21875,
+          "value": 542215.2170740868,
           "weight": 0.75
         }
       },
-      "nav": 730713.6212612101,
+      "nav": 724893.6223893893,
       "peak_nav": 730831.6341208768,
-      "drawdown": 0.0001614774924304948,
-      "total_return": 6.3071362126121,
+      "drawdown": 0.008125006436852378,
+      "total_return": 6.248936223893893,
       "total_trades": 20,
       "history": [
         {
@@ -735,6 +744,15 @@
             "SHV": 0.25
           },
           "return": 630.714
+        },
+        {
+          "date": "2026-08-14",
+          "nav": 724893.62,
+          "weights": {
+            "BTC": 0.75,
+            "SHV": 0.25
+          },
+          "return": 624.894
         }
       ],
       "trade_log": [
@@ -904,8 +922,8 @@
         "SHV": 0.25
       },
       "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 2.00x)",
-      "last_updated": "2026-08-13T22:20:25.626187Z",
-      "action_required": true
+      "last_updated": "2026-08-14T21:51:56.156226Z",
+      "action_required": false
     }
   }
 }
