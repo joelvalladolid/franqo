@@ -4,21 +4,21 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 76057.93154956186,
+      "cash": 76302.6523412563,
       "positions": {
-        "BTC": {
-          "shares": 0.39914258884172915,
-          "avg_cost": 63517.76171875,
-          "current_price": 62843.21875,
-          "value": 25083.405023022093,
+        "ETH": {
+          "shares": 13.349753749273836,
+          "avg_cost": 1905.219970703125,
+          "current_price": 1905.219970703125,
+          "value": 25434.21744708543,
           "weight": 0.25
         }
       },
-      "nav": 101141.33657258395,
-      "peak_nav": 101421.59189867423,
-      "drawdown": 0.0027632708266921036,
-      "total_return": 0.01141336572583954,
-      "total_trades": 10,
+      "nav": 101736.86978834172,
+      "peak_nav": 101736.86978834172,
+      "drawdown": 0.0,
+      "total_return": 0.01736869788341719,
+      "total_trades": 11,
       "history": [
         {
           "date": "2026-06-25",
@@ -329,6 +329,15 @@
             "SHV": 0.75
           },
           "return": 1.141
+        },
+        {
+          "date": "2026-08-17",
+          "nav": 101736.87,
+          "weights": {
+            "ETH": 0.25,
+            "SHV": 0.75
+          },
+          "return": 1.737
         }
       ],
       "trade_log": [
@@ -411,33 +420,41 @@
           "to": "BTC:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:25%, SHV:75%",
           "nav": 101410.58
+        },
+        {
+          "date": "2026-08-17 21:52 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "BTC:25%, SHV:75%",
+          "to": "ETH:25%, SHV:75%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:25%, SHV:75%",
+          "nav": 101736.87
         }
       ],
       "current_allocation": {
-        "BTC": 0.25,
+        "ETH": 0.25,
         "SHV": 0.75
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 1.00x)",
-      "last_updated": "2026-08-14T21:51:55.745732Z",
-      "action_required": false
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 1.00x)",
+      "last_updated": "2026-08-17T21:52:04.483217Z",
+      "action_required": true
     },
     "V503": {
       "version": "V503",
-      "cash": 182678.40531530255,
+      "cash": 184441.7403047022,
       "positions": {
-        "BTC": {
-          "shares": 8.62806246814159,
-          "avg_cost": 63517.76171875,
-          "current_price": 62843.21875,
-          "value": 542215.2170740868,
+        "ETH": {
+          "shares": 290.4258980184324,
+          "avg_cost": 1905.219970703125,
+          "current_price": 1905.219970703125,
+          "value": 553325.2209141066,
           "weight": 0.75
         }
       },
-      "nav": 724893.6223893893,
-      "peak_nav": 730831.6341208768,
-      "drawdown": 0.008125006436852378,
-      "total_return": 6.248936223893893,
-      "total_trades": 20,
+      "nav": 737766.9612188088,
+      "peak_nav": 737766.9612188088,
+      "drawdown": 0.0,
+      "total_return": 6.377669612188088,
+      "total_trades": 21,
       "history": [
         {
           "date": "2026-06-25",
@@ -753,6 +770,15 @@
             "SHV": 0.25
           },
           "return": 624.894
+        },
+        {
+          "date": "2026-08-17",
+          "nav": 737766.96,
+          "weights": {
+            "ETH": 0.75,
+            "SHV": 0.25
+          },
+          "return": 637.767
         }
       ],
       "trade_log": [
@@ -915,15 +941,23 @@
           "to": "BTC:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:75%, SHV:25%",
           "nav": 730713.62
+        },
+        {
+          "date": "2026-08-17 21:52 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "BTC:75%, SHV:25%",
+          "to": "ETH:75%, SHV:25%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:75%, SHV:25%",
+          "nav": 737766.96
         }
       ],
       "current_allocation": {
-        "BTC": 0.75,
+        "ETH": 0.75,
         "SHV": 0.25
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 2.00x)",
-      "last_updated": "2026-08-14T21:51:56.156226Z",
-      "action_required": false
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 2.00x)",
+      "last_updated": "2026-08-17T21:52:04.907174Z",
+      "action_required": true
     }
   }
 }
