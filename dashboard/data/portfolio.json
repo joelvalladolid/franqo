@@ -9,22 +9,22 @@
         "ETH": {
           "shares": 24.006741701627107,
           "avg_cost": 2315.93994140625,
-          "current_price": 2482.8701171875,
-          "value": 59605.621582008935,
+          "current_price": 2441.320068359375,
+          "value": 58608.14029210214,
           "weight": 0.55
         },
         "BTC": {
           "shares": 0.6257681435489054,
           "avg_cost": 72693.71875,
-          "current_price": 78933.59375,
-          "value": 49394.12842458098,
+          "current_price": 78595.546875,
+          "value": 49182.589459179726,
           "weight": 0.45
         }
       },
-      "nav": 108999.75000658992,
+      "nav": 107790.72975128188,
       "peak_nav": 108999.75000658992,
-      "drawdown": 0.0,
-      "total_return": 0.08999750006589922,
+      "drawdown": 0.011091954387371991,
+      "total_return": 0.07790729751281877,
       "total_trades": 13,
       "history": [
         {
@@ -390,6 +390,15 @@
             "BTC": 0.45
           },
           "return": 9.0
+        },
+        {
+          "date": "2026-08-25",
+          "nav": 107790.73,
+          "weights": {
+            "ETH": 0.55,
+            "BTC": 0.45
+          },
+          "return": 7.791
         }
       ],
       "trade_log": [
@@ -503,7 +512,7 @@
         "BTC": 0.45
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.00x)",
-      "last_updated": "2026-08-24T21:55:26.125480Z",
+      "last_updated": "2026-08-25T21:54:50.828211Z",
       "action_required": false
     },
     "V503": {
@@ -511,25 +520,25 @@
       "cash": 0,
       "positions": {
         "ETH": {
-          "shares": 1100.5468039518662,
-          "avg_cost": 2482.8701171875,
-          "current_price": 2482.8701171875,
-          "value": 2732514.7720982987,
-          "weight": 0.8754046478930563
+          "shares": 1761.1077608994322,
+          "avg_cost": 2441.320068359375,
+          "current_price": 2441.320068359375,
+          "value": 4299427.719227227,
+          "weight": 0.8751291388361924
         },
         "BTC": {
-          "shares": 28.32373135733557,
-          "avg_cost": 78933.59375,
-          "current_price": 78933.59375,
-          "value": 2235693.904444062,
-          "weight": 0.7162401664579551
+          "shares": 44.75715265042655,
+          "avg_cost": 78595.5625,
+          "current_price": 78595.5625,
+          "value": 3517713.5884586405,
+          "weight": 0.7160147499568846
         }
       },
-      "nav": 3121430.5049384614,
-      "peak_nav": 3121430.5049384614,
+      "nav": 4912906.596785139,
+      "peak_nav": 4912906.596785139,
       "drawdown": 0.0,
-      "total_return": 30.214305049384613,
-      "total_trades": 25,
+      "total_return": 48.129065967851396,
+      "total_trades": 26,
       "history": [
         {
           "date": "2026-06-25",
@@ -899,6 +908,15 @@
             "BTC": 0.7162401664579551
           },
           "return": 3021.431
+        },
+        {
+          "date": "2026-08-25",
+          "nav": 4912906.6,
+          "weights": {
+            "ETH": 0.8751291388361924,
+            "BTC": 0.7160147499568846
+          },
+          "return": 4812.907
         }
       ],
       "trade_log": [
@@ -1101,14 +1119,22 @@
           "to": "ETH:88%, BTC:72%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:88%, BTC:72%",
           "nav": 3121430.5
+        },
+        {
+          "date": "2026-08-25 21:54 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:55%, BTC:45%",
+          "to": "ETH:88%, BTC:72%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:88%, BTC:72%",
+          "nav": 4912906.6
         }
       ],
       "current_allocation": {
-        "ETH": 0.8754046478930563,
-        "BTC": 0.7162401664579551
+        "ETH": 0.8751291388361924,
+        "BTC": 0.7160147499568846
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.59x)",
-      "last_updated": "2026-08-24T21:55:26.528885Z",
+      "last_updated": "2026-08-25T21:54:51.235073Z",
       "action_required": true
     }
   }
