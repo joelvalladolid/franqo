@@ -4,28 +4,28 @@
   "portfolios": {
     "V428": {
       "version": "V428",
-      "cash": 0,
+      "cash": 0.0,
       "positions": {
-        "ETH": {
-          "shares": 24.246635177425365,
-          "avg_cost": 2438.27001953125,
-          "current_price": 2460.139892578125,
-          "value": 59650.11446077222,
+        "BTC": {
+          "shares": 0.7672285206032055,
+          "avg_cost": 76737.109375,
+          "current_price": 76737.109375,
+          "value": 58874.898901147615,
           "weight": 0.55
         },
-        "BTC": {
-          "shares": 0.6228973982996917,
-          "avg_cost": 77654.4921875,
-          "current_price": 78115.7578125,
-          "value": 48658.10230761507,
+        "ETH": {
+          "shares": 19.71392012415456,
+          "avg_cost": 2443.469970703125,
+          "current_price": 2443.469970703125,
+          "value": 48170.37182821168,
           "weight": 0.45
         }
       },
-      "nav": 108308.2167683873,
+      "nav": 107045.2707293593,
       "peak_nav": 111258.36887303396,
-      "drawdown": 0.026516226460351275,
-      "total_return": 0.08308216768387297,
-      "total_trades": 15,
+      "drawdown": 0.03786769648297269,
+      "total_return": 0.07045270729359297,
+      "total_trades": 16,
       "history": [
         {
           "date": "2026-06-25",
@@ -489,6 +489,15 @@
             "BTC": 0.45
           },
           "return": 8.308
+        },
+        {
+          "date": "2026-09-10",
+          "nav": 107045.27,
+          "weights": {
+            "BTC": 0.55,
+            "ETH": 0.45
+          },
+          "return": 7.045
         }
       ],
       "trade_log": [
@@ -611,40 +620,48 @@
           "to": "ETH:55%, BTC:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:55%, BTC:45%",
           "nav": 107490.62
+        },
+        {
+          "date": "2026-09-10 23:21 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:55%, BTC:45%",
+          "to": "BTC:55%, ETH:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:55%, ETH:45%",
+          "nav": 107045.27
         }
       ],
       "current_allocation": {
-        "ETH": 0.55,
-        "BTC": 0.45
+        "BTC": 0.55,
+        "ETH": 0.45
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.00x)",
-      "last_updated": "2026-09-09T23:27:56.953270Z",
-      "action_required": false
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: BTC & ETH (Lev: 1.00x)",
+      "last_updated": "2026-09-10T23:21:23.106807Z",
+      "action_required": true
     },
     "V503": {
       "version": "V503",
       "cash": 0,
       "positions": {
-        "ETH": {
-          "shares": 172660.48192482206,
-          "avg_cost": 2460.139892578125,
-          "current_price": 2460.139892578125,
-          "value": 424768939.45501906,
-          "weight": 0.7868167084428875
-        },
         "BTC": {
-          "shares": 4449.015575380586,
-          "avg_cost": 78115.7578125,
-          "current_price": 78115.7578125,
-          "value": 347538223.19047016,
-          "weight": 0.6437591250896353
+          "shares": 8039.512227253629,
+          "avg_cost": 76737.109375,
+          "current_price": 76737.109375,
+          "value": 616928929.1044116,
+          "weight": 0.8082441108980836
+        },
+        "ETH": {
+          "shares": 206575.09155242913,
+          "avg_cost": 2443.469970703125,
+          "current_price": 2443.469970703125,
+          "value": 504760032.9036094,
+          "weight": 0.661290636189341
         }
       },
-      "nav": 539857548.647687,
-      "peak_nav": 539857548.647687,
+      "nav": 763295297.529491,
+      "peak_nav": 763295297.529491,
       "drawdown": 0.0,
-      "total_return": 5397.57548647687,
-      "total_trades": 37,
+      "total_return": 7631.952975294909,
+      "total_trades": 38,
       "history": [
         {
           "date": "2026-06-25",
@@ -1113,6 +1130,15 @@
             "BTC": 0.6437591250896353
           },
           "return": 539757.549
+        },
+        {
+          "date": "2026-09-10",
+          "nav": 763295297.53,
+          "weights": {
+            "BTC": 0.8082441108980836,
+            "ETH": 0.661290636189341
+          },
+          "return": 763195.298
         }
       ],
       "trade_log": [
@@ -1411,14 +1437,22 @@
           "to": "ETH:79%, BTC:64%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:79%, BTC:64%",
           "nav": 539857548.65
+        },
+        {
+          "date": "2026-09-10 23:21 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "ETH:55%, BTC:45%",
+          "to": "BTC:81%, ETH:66%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:81%, ETH:66%",
+          "nav": 763295297.53
         }
       ],
       "current_allocation": {
-        "ETH": 0.7868167084428875,
-        "BTC": 0.6437591250896353
+        "BTC": 0.8082441108980836,
+        "ETH": 0.661290636189341
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.43x)",
-      "last_updated": "2026-09-09T23:27:57.324729Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: BTC & ETH (Lev: 1.47x)",
+      "last_updated": "2026-09-10T23:21:23.499466Z",
       "action_required": true
     }
   }
