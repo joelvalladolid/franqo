@@ -8,15 +8,15 @@
       "positions": {
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2770.5400390625,
-          "current_price": 2770.5400390625,
+          "avg_cost": 2754.830078125,
+          "current_price": 2754.830078125,
           "value": NaN,
           "weight": 0.55
         },
-        "BTC": {
+        "TQQQ": {
           "shares": NaN,
-          "avg_cost": 86404.5,
-          "current_price": 86404.5,
+          "avg_cost": 80.83000183105469,
+          "current_price": 80.83000183105469,
           "value": NaN,
           "weight": 0.45
         }
@@ -25,7 +25,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 19,
+      "total_trades": 20,
       "history": [
         {
           "date": "2026-06-25",
@@ -715,14 +715,22 @@
           "to": "ETH:55%, BTC:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:55%, BTC:45%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-22 23:45 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "ETH:55%, TQQQ:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:55%, TQQQ:45%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "ETH": 0.55,
-        "BTC": 0.45
+        "TQQQ": 0.45
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.00x)",
-      "last_updated": "2026-09-22T00:14:48.082677Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & TQQQ (Lev: 1.00x)",
+      "last_updated": "2026-09-22T23:45:29.263484Z",
       "action_required": true
     },
     "V503": {
@@ -731,24 +739,24 @@
       "positions": {
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2770.5400390625,
-          "current_price": 2770.5400390625,
+          "avg_cost": 2754.280029296875,
+          "current_price": 2754.280029296875,
           "value": NaN,
-          "weight": 1.0888885855958785
+          "weight": 1.097895847700773
         },
-        "BTC": {
+        "TQQQ": {
           "shares": NaN,
-          "avg_cost": 86404.5,
-          "current_price": 86404.5,
+          "avg_cost": 80.83000183105469,
+          "current_price": 80.83000183105469,
           "value": NaN,
-          "weight": 0.8909088427602642
+          "weight": 0.8982784208460869
         }
       },
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 45,
+      "total_trades": 46,
       "history": [
         {
           "date": "2026-06-25",
@@ -1651,14 +1659,22 @@
           "to": "ETH:109%, BTC:89%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:109%, BTC:89%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-22 23:45 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "ETH:110%, TQQQ:90%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:110%, TQQQ:90%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "ETH": 1.0888885855958785,
-        "BTC": 0.8909088427602642
+        "ETH": 1.097895847700773,
+        "TQQQ": 0.8982784208460869
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & BTC (Lev: 1.98x)",
-      "last_updated": "2026-09-22T00:14:48.890266Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & TQQQ (Lev: 2.00x)",
+      "last_updated": "2026-09-22T23:45:29.927275Z",
       "action_required": true
     }
   }
