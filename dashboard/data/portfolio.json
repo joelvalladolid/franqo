@@ -8,15 +8,15 @@
       "positions": {
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2754.830078125,
-          "current_price": 2754.830078125,
+          "avg_cost": 2684.5,
+          "current_price": 2684.5,
           "value": NaN,
           "weight": 0.55
         },
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 80.83000183105469,
-          "current_price": 80.83000183105469,
+          "avg_cost": 78.66000366210938,
+          "current_price": 78.66000366210938,
           "value": NaN,
           "weight": 0.45
         }
@@ -25,7 +25,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 20,
+      "total_trades": 21,
       "history": [
         {
           "date": "2026-06-25",
@@ -561,6 +561,15 @@
             "BTC": 0.45
           },
           "return": NaN
+        },
+        {
+          "date": "2026-09-23",
+          "nav": NaN,
+          "weights": {
+            "ETH": 0.55,
+            "TQQQ": 0.45
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -723,6 +732,14 @@
           "to": "ETH:55%, TQQQ:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:55%, TQQQ:45%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-23 23:54 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "ETH:55%, TQQQ:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:55%, TQQQ:45%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
@@ -730,7 +747,7 @@
         "TQQQ": 0.45
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & TQQQ (Lev: 1.00x)",
-      "last_updated": "2026-09-22T23:45:29.263484Z",
+      "last_updated": "2026-09-23T23:54:41.435916Z",
       "action_required": true
     },
     "V503": {
@@ -739,24 +756,24 @@
       "positions": {
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2754.280029296875,
-          "current_price": 2754.280029296875,
+          "avg_cost": 2684.5,
+          "current_price": 2684.5,
           "value": NaN,
-          "weight": 1.097895847700773
+          "weight": 0.9349016762762017
         },
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 80.83000183105469,
-          "current_price": 80.83000183105469,
+          "avg_cost": 78.66000366210938,
+          "current_price": 78.66000366210938,
           "value": NaN,
-          "weight": 0.8982784208460869
+          "weight": 0.7649195533168923
         }
       },
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 46,
+      "total_trades": 47,
       "history": [
         {
           "date": "2026-06-25",
@@ -1297,6 +1314,15 @@
             "BTC": 0.8909088427602642
           },
           "return": NaN
+        },
+        {
+          "date": "2026-09-23",
+          "nav": NaN,
+          "weights": {
+            "ETH": 0.9349016762762017,
+            "TQQQ": 0.7649195533168923
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1667,14 +1693,22 @@
           "to": "ETH:110%, TQQQ:90%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:110%, TQQQ:90%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-23 23:54 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "ETH:93%, TQQQ:76%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:93%, TQQQ:76%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "ETH": 1.097895847700773,
-        "TQQQ": 0.8982784208460869
+        "ETH": 0.9349016762762017,
+        "TQQQ": 0.7649195533168923
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & TQQQ (Lev: 2.00x)",
-      "last_updated": "2026-09-22T23:45:29.927275Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: ETH & TQQQ (Lev: 1.70x)",
+      "last_updated": "2026-09-23T23:54:41.855832Z",
       "action_required": true
     }
   }
