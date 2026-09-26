@@ -8,15 +8,15 @@
       "positions": {
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 78.58000183105469,
-          "current_price": 78.58000183105469,
+          "avg_cost": NaN,
+          "current_price": NaN,
           "value": NaN,
           "weight": 0.55
         },
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2687.25,
-          "current_price": 2687.25,
+          "avg_cost": 2689.300048828125,
+          "current_price": 2689.300048828125,
           "value": NaN,
           "weight": 0.45
         }
@@ -25,7 +25,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 22,
+      "total_trades": 23,
       "history": [
         {
           "date": "2026-06-25",
@@ -579,6 +579,15 @@
             "ETH": 0.45
           },
           "return": NaN
+        },
+        {
+          "date": "2026-09-26",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.55,
+            "ETH": 0.45
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -757,6 +766,14 @@
           "to": "TQQQ:55%, ETH:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, ETH:45%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-26 00:05 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:55%, ETH:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, ETH:45%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
@@ -764,7 +781,7 @@
         "ETH": 0.45
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & ETH (Lev: 1.00x)",
-      "last_updated": "2026-09-24T23:58:37.585511Z",
+      "last_updated": "2026-09-26T00:05:37.078646Z",
       "action_required": true
     },
     "V503": {
@@ -773,24 +790,24 @@
       "positions": {
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 78.58000183105469,
-          "current_price": 78.58000183105469,
+          "avg_cost": NaN,
+          "current_price": NaN,
           "value": NaN,
-          "weight": 0.9499683849478552
+          "weight": 0.9243795856601537
         },
         "ETH": {
           "shares": NaN,
-          "avg_cost": 2687.169921875,
-          "current_price": 2687.169921875,
+          "avg_cost": 2689.300048828125,
+          "current_price": 2689.300048828125,
           "value": NaN,
-          "weight": 0.7772468604118814
+          "weight": 0.7563105700855802
         }
       },
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 48,
+      "total_trades": 49,
       "history": [
         {
           "date": "2026-06-25",
@@ -1349,6 +1366,15 @@
             "ETH": 0.7772468604118814
           },
           "return": NaN
+        },
+        {
+          "date": "2026-09-26",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.9243795856601537,
+            "ETH": 0.7563105700855802
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1735,14 +1761,22 @@
           "to": "TQQQ:95%, ETH:78%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:95%, ETH:78%",
           "nav": NaN
+        },
+        {
+          "date": "2026-09-26 00:05 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:92%, ETH:76%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:92%, ETH:76%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "TQQQ": 0.9499683849478552,
-        "ETH": 0.7772468604118814
+        "TQQQ": 0.9243795856601537,
+        "ETH": 0.7563105700855802
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & ETH (Lev: 1.73x)",
-      "last_updated": "2026-09-24T23:58:37.976221Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & ETH (Lev: 1.68x)",
+      "last_updated": "2026-09-26T00:05:37.787162Z",
       "action_required": true
     }
   }
