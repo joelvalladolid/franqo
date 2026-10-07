@@ -8,15 +8,15 @@
       "positions": {
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 83.12000274658203,
-          "current_price": 83.12000274658203,
+          "avg_cost": 84.25,
+          "current_price": 84.25,
           "value": NaN,
           "weight": 0.55
         },
         "BTC": {
           "shares": NaN,
-          "avg_cost": 85666.9375,
-          "current_price": 85666.9375,
+          "avg_cost": 85539.71875,
+          "current_price": 85539.71875,
           "value": NaN,
           "weight": 0.45
         }
@@ -25,7 +25,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 29,
+      "total_trades": 30,
       "history": [
         {
           "date": "2026-06-25",
@@ -642,6 +642,15 @@
             "BTC": 0.45
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-07",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.55,
+            "BTC": 0.45
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -876,6 +885,14 @@
           "to": "TQQQ:55%, BTC:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, BTC:45%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-07 00:58 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:55%, BTC:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, BTC:45%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
@@ -883,7 +900,7 @@
         "BTC": 0.45
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & BTC (Lev: 1.00x)",
-      "last_updated": "2026-10-06T01:51:02.316851Z",
+      "last_updated": "2026-10-07T00:58:05.016965Z",
       "action_required": true
     },
     "V503": {
@@ -892,24 +909,24 @@
       "positions": {
         "TQQQ": {
           "shares": NaN,
-          "avg_cost": 83.12000274658203,
-          "current_price": 83.12000274658203,
+          "avg_cost": 84.25,
+          "current_price": 84.25,
           "value": NaN,
-          "weight": 1.031040143858946
+          "weight": 1.0427554461672137
         },
         "BTC": {
           "shares": NaN,
-          "avg_cost": 85660.8828125,
-          "current_price": 85660.8828125,
+          "avg_cost": 85539.71875,
+          "current_price": 85539.71875,
           "value": NaN,
-          "weight": 0.8435782995209559
+          "weight": 0.8531635468640839
         }
       },
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 55,
+      "total_trades": 56,
       "history": [
         {
           "date": "2026-06-25",
@@ -1531,6 +1548,15 @@
             "BTC": 0.8435782995209559
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-07",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 1.0427554461672137,
+            "BTC": 0.8531635468640839
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1973,14 +1999,22 @@
           "to": "TQQQ:103%, BTC:84%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:103%, BTC:84%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-07 00:58 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:104%, BTC:85%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:104%, BTC:85%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "TQQQ": 1.031040143858946,
-        "BTC": 0.8435782995209559
+        "TQQQ": 1.0427554461672137,
+        "BTC": 0.8531635468640839
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & BTC (Lev: 1.87x)",
-      "last_updated": "2026-10-06T01:51:03.066574Z",
+      "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & BTC (Lev: 1.90x)",
+      "last_updated": "2026-10-07T00:58:05.848185Z",
       "action_required": true
     }
   }
