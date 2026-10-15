@@ -15,8 +15,8 @@
         },
         "BTC": {
           "shares": NaN,
-          "avg_cost": 83383.171875,
-          "current_price": 83383.171875,
+          "avg_cost": 81605.859375,
+          "current_price": 81605.859375,
           "value": NaN,
           "weight": 0.45
         }
@@ -25,7 +25,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 35,
+      "total_trades": 36,
       "history": [
         {
           "date": "2026-06-25",
@@ -696,6 +696,15 @@
             "BTC": 0.45
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-15",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.55,
+            "BTC": 0.45
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -978,6 +987,14 @@
           "to": "TQQQ:55%, BTC:45%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, BTC:45%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-15 00:02 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:55%, BTC:45%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:55%, BTC:45%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
@@ -985,7 +1002,7 @@
         "BTC": 0.45
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & BTC (Lev: 1.00x)",
-      "last_updated": "2026-10-14T00:32:14.024079Z",
+      "last_updated": "2026-10-15T00:02:30.890113Z",
       "action_required": true
     },
     "V503": {
@@ -1001,8 +1018,8 @@
         },
         "BTC": {
           "shares": NaN,
-          "avg_cost": 83383.171875,
-          "current_price": 83383.171875,
+          "avg_cost": 81605.859375,
+          "current_price": 81605.859375,
           "value": NaN,
           "weight": 0.9
         }
@@ -1011,7 +1028,7 @@
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 61,
+      "total_trades": 62,
       "history": [
         {
           "date": "2026-06-25",
@@ -1687,6 +1704,15 @@
             "BTC": 0.9
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-15",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 1.1,
+            "BTC": 0.9
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2177,6 +2203,14 @@
           "to": "TQQQ:110%, BTC:90%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:110%, BTC:90%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-15 00:02 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:110%, BTC:90%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:110%, BTC:90%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
@@ -2184,7 +2218,7 @@
         "BTC": 0.9
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 Top 2: TQQQ & BTC (Lev: 2.00x)",
-      "last_updated": "2026-10-14T00:32:15.254219Z",
+      "last_updated": "2026-10-15T00:02:32.310112Z",
       "action_required": true
     }
   }
