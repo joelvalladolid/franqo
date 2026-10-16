@@ -8,8 +8,8 @@
       "positions": {
         "BTC": {
           "shares": NaN,
-          "avg_cost": 82105.96875,
-          "current_price": 82105.96875,
+          "avg_cost": 81499.1171875,
+          "current_price": 81499.1171875,
           "value": NaN,
           "weight": 1.0
         }
@@ -18,7 +18,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 37,
+      "total_trades": 38,
       "history": [
         {
           "date": "2026-06-25",
@@ -698,6 +698,14 @@
             "BTC": 0.45
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-16",
+          "nav": NaN,
+          "weights": {
+            "BTC": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -996,13 +1004,21 @@
           "to": "BTC:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-16 23:48 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "BTC:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "BTC": 1.0
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 100% BTC (Lev: 1.00x)",
-      "last_updated": "2026-10-15T23:46:32.925344Z",
+      "last_updated": "2026-10-16T23:48:21.204252Z",
       "action_required": true
     },
     "V503": {
@@ -1011,8 +1027,8 @@
       "positions": {
         "BTC": {
           "shares": NaN,
-          "avg_cost": 82105.96875,
-          "current_price": 82105.96875,
+          "avg_cost": 81499.1171875,
+          "current_price": 81499.1171875,
           "value": NaN,
           "weight": 2.0
         }
@@ -1021,7 +1037,7 @@
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 63,
+      "total_trades": 64,
       "history": [
         {
           "date": "2026-06-25",
@@ -1706,6 +1722,14 @@
             "BTC": 0.9
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-16",
+          "nav": NaN,
+          "weights": {
+            "BTC": 2.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2212,13 +2236,21 @@
           "to": "BTC:200%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:200%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-16 23:48 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "BTC:200%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:200%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "BTC": 2.0
       },
       "signal_reason": "\ud83d\udcc8 BULL \u2014 100% BTC (Lev: 2.00x)",
-      "last_updated": "2026-10-15T23:46:33.334769Z",
+      "last_updated": "2026-10-16T23:48:21.545705Z",
       "action_required": true
     }
   }
