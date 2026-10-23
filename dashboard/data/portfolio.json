@@ -5,20 +5,12 @@
     "V428": {
       "version": "V428",
       "cash": NaN,
-      "positions": {
-        "BTC": {
-          "shares": NaN,
-          "avg_cost": 81224.40625,
-          "current_price": 81224.40625,
-          "value": NaN,
-          "weight": 1.0
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 42,
+      "total_trades": 43,
       "history": [
         {
           "date": "2026-06-25",
@@ -1076,32 +1068,32 @@
           "to": "BTC:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-23 23:57 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "BTC": 1.0
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 100% BTC (Lev: 1.00x)",
-      "last_updated": "2026-10-23T00:06:16.918556Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-10-23T23:57:12.437067Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
       "cash": NaN,
-      "positions": {
-        "BTC": {
-          "shares": NaN,
-          "avg_cost": 81224.40625,
-          "current_price": 81224.40625,
-          "value": NaN,
-          "weight": 2.0
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 68,
+      "total_trades": 69,
       "history": [
         {
           "date": "2026-06-25",
@@ -2372,13 +2364,21 @@
           "to": "BTC:200%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:200%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-23 23:57 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "BTC": 2.0
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83d\udcc8 BULL \u2014 100% BTC (Lev: 2.00x)",
-      "last_updated": "2026-10-23T00:06:17.779503Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-10-23T23:57:12.975371Z",
       "action_required": true
     }
   }
