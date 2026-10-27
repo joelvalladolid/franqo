@@ -5,12 +5,20 @@
     "V428": {
       "version": "V428",
       "cash": NaN,
-      "positions": {},
+      "positions": {
+        "TQQQ": {
+          "shares": NaN,
+          "avg_cost": NaN,
+          "current_price": NaN,
+          "value": NaN,
+          "weight": 0.25
+        }
+      },
       "nav": NaN,
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 43,
+      "total_trades": 44,
       "history": [
         {
           "date": "2026-06-25",
@@ -730,6 +738,15 @@
             "BTC": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-27",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.25,
+            "SHV": 0.75
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1076,24 +1093,41 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-27 00:42 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:25%, SHV:75%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:25%, SHV:75%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "SHV": 1.0
+        "TQQQ": 0.25,
+        "SHV": 0.75
       },
-      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-10-23T23:57:12.437067Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 1.00x)",
+      "last_updated": "2026-10-27T00:42:57.555724Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
       "cash": NaN,
-      "positions": {},
+      "positions": {
+        "TQQQ": {
+          "shares": NaN,
+          "avg_cost": NaN,
+          "current_price": NaN,
+          "value": NaN,
+          "weight": 0.75
+        }
+      },
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 69,
+      "total_trades": 70,
       "history": [
         {
           "date": "2026-06-25",
@@ -1818,6 +1852,15 @@
             "BTC": 2.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-27",
+          "nav": NaN,
+          "weights": {
+            "TQQQ": 0.75,
+            "SHV": 0.25
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2372,13 +2415,22 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-27 00:42 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "TQQQ:75%, SHV:25%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: TQQQ:75%, SHV:25%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "SHV": 1.0
+        "TQQQ": 0.75,
+        "SHV": 0.25
       },
-      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-10-23T23:57:12.975371Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
+      "last_updated": "2026-10-27T00:42:58.392084Z",
       "action_required": true
     }
   }
