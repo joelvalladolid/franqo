@@ -5,20 +5,12 @@
     "V428": {
       "version": "V428",
       "cash": NaN,
-      "positions": {
-        "ETH": {
-          "shares": NaN,
-          "avg_cost": 2344.360107421875,
-          "current_price": 2344.360107421875,
-          "value": NaN,
-          "weight": 0.25
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 45,
+      "total_trades": 46,
       "history": [
         {
           "date": "2026-06-25",
@@ -756,6 +748,14 @@
             "SHV": 0.75
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-29",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1118,33 +1118,32 @@
           "to": "ETH:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:25%, SHV:75%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-29 01:10 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "ETH": 0.25,
-        "SHV": 0.75
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 1.00x)",
-      "last_updated": "2026-10-28T00:40:44.799088Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-10-29T01:10:11.376269Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
       "cash": NaN,
-      "positions": {
-        "ETH": {
-          "shares": NaN,
-          "avg_cost": 2344.360107421875,
-          "current_price": 2344.360107421875,
-          "value": NaN,
-          "weight": 0.75
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 71,
+      "total_trades": 72,
       "history": [
         {
           "date": "2026-06-25",
@@ -1887,6 +1886,14 @@
             "SHV": 0.25
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-29",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2457,14 +2464,21 @@
           "to": "ETH:75%, SHV:25%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:75%, SHV:25%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-29 01:10 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "ETH": 0.75,
-        "SHV": 0.25
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 2.00x)",
-      "last_updated": "2026-10-28T00:40:45.987916Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-10-29T01:10:12.313923Z",
       "action_required": true
     }
   }
