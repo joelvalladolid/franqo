@@ -10,7 +10,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 46,
+      "total_trades": 47,
       "history": [
         {
           "date": "2026-06-25",
@@ -756,6 +756,14 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-30",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1126,13 +1134,21 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-30 01:17 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "SHV": 1.0
       },
       "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-10-29T01:10:11.376269Z",
+      "last_updated": "2026-10-30T01:17:53.710206Z",
       "action_required": true
     },
     "V503": {
@@ -1143,7 +1159,7 @@
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 72,
+      "total_trades": 73,
       "history": [
         {
           "date": "2026-06-25",
@@ -1894,6 +1910,14 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-10-30",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2472,13 +2496,21 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-10-30 01:17 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "SHV": 1.0
       },
       "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-10-29T01:10:12.313923Z",
+      "last_updated": "2026-10-30T01:17:55.011242Z",
       "action_required": true
     }
   }
