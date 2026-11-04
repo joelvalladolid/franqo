@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-03T03:01:23.333554Z",
+  "generated_at": "2026-11-04T01:35:59.013323Z",
   "signals": {
     "V428": {
       "version": "V428",
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "allocation": {
         "TQQQ": 0.25,
         "SHV": 0.75
@@ -15,7 +15,7 @@
           "price_prev": 62.0099983215332,
           "sma_fast": 69.59266688028971,
           "sma_slow": 73.29879508972168,
-          "sma_regime": 65.37154466629028,
+          "sma_regime": 65.37154447555542,
           "rsi2": 0.0,
           "momentum": -0.2660165718242823,
           "is_bull": false,
@@ -24,105 +24,26 @@
           "above_regime": false
         },
         "ETH": {
-          "price": 2273.05224609375,
+          "price": 2248.88623046875,
           "price_prev": 2273.05224609375,
-          "sma_fast": 2348.4121256510416,
-          "sma_slow": 2515.4790576171877,
-          "sma_regime": 2157.6816607666015,
-          "rsi2": 58.06842705075047,
-          "momentum": -0.1032260438322471,
+          "sma_fast": 2337.7551106770834,
+          "sma_slow": 2510.9163671875,
+          "sma_regime": 2157.1828668212893,
+          "rsi2": 45.658272532129935,
+          "momentum": -0.07996833427752537,
           "is_bull": false,
           "above_fast": false,
           "above_slow": false,
           "above_regime": true
         },
         "BTC": {
-          "price": 78248.453125,
+          "price": 76677.296875,
           "price_prev": 78248.453125,
-          "sma_fast": 80450.725,
-          "sma_slow": 81915.9121875,
-          "sma_regime": 73148.8930859375,
-          "rsi2": 29.078947368421055,
-          "momentum": -0.0649026064114443,
-          "is_bull": false,
-          "above_fast": false,
-          "above_slow": false,
-          "above_regime": true
-        },
-        "GLD": {
-          "price": 361.6499938964844,
-          "price_prev": 355.7799987792969,
-          "sma_fast": 372.9260009765625,
-          "sma_slow": 389.3376007080078,
-          "sma_regime": 412.61175018310547,
-          "rsi2": 31.457631110260678,
-          "momentum": -0.04864002746212637,
-          "is_bull": false,
-          "above_fast": false,
-          "above_slow": false,
-          "above_regime": false
-        },
-        "SQQQ": {
-          "price": 43.54999923706055,
-          "price_prev": 41.83000183105469,
-          "sma_fast": 38.052666982014976,
-          "sma_slow": 36.80664371490479,
-          "sma_regime": 48.73219952583313,
-          "rsi2": 70.45453757295593,
-          "momentum": 0.3149154783074215,
-          "is_bull": false,
-          "above_fast": true,
-          "above_slow": true,
-          "above_regime": false
-        }
-      },
-      "bull_assets": [],
-      "data_date": "2026-11-02",
-      "signal_date": "2026-11-02"
-    },
-    "V503": {
-      "version": "V503",
-      "date": "2026-11-03",
-      "allocation": {
-        "TQQQ": 0.75,
-        "SHV": 0.25
-      },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
-      "asset_details": {
-        "TQQQ": {
-          "price": 59.459999084472656,
-          "price_prev": 62.0099983215332,
-          "sma_fast": 69.59266688028971,
-          "sma_slow": 73.29879508972168,
-          "sma_regime": 65.37154483795166,
-          "rsi2": 0.0,
-          "momentum": -0.2660165718242823,
-          "is_bull": false,
-          "above_fast": false,
-          "above_slow": false,
-          "above_regime": false
-        },
-        "ETH": {
-          "price": 2273.05224609375,
-          "price_prev": 2273.05224609375,
-          "sma_fast": 2348.4121256510416,
-          "sma_slow": 2515.4790576171877,
-          "sma_regime": 2157.6816607666015,
-          "rsi2": 58.06842705075047,
-          "momentum": -0.1032260438322471,
-          "is_bull": false,
-          "above_fast": false,
-          "above_slow": false,
-          "above_regime": true
-        },
-        "BTC": {
-          "price": 78248.453125,
-          "price_prev": 78248.453125,
-          "sma_fast": 80450.725,
-          "sma_slow": 81915.9121875,
-          "sma_regime": 73148.8930859375,
-          "rsi2": 29.078947368421055,
-          "momentum": -0.0649026064114443,
+          "sma_fast": 80094.7046875,
+          "sma_slow": 81912.695,
+          "sma_regime": 73156.51890625,
+          "rsi2": 34.119543212060464,
+          "momentum": -0.06219552652841576,
           "is_bull": false,
           "above_fast": false,
           "above_slow": false,
@@ -147,6 +68,85 @@
           "sma_fast": 38.052666982014976,
           "sma_slow": 36.80664371490479,
           "sma_regime": 48.73219946861267,
+          "rsi2": 70.45453757295593,
+          "momentum": 0.3149154783074215,
+          "is_bull": false,
+          "above_fast": true,
+          "above_slow": true,
+          "above_regime": false
+        }
+      },
+      "bull_assets": [],
+      "data_date": "2026-11-02",
+      "signal_date": "2026-11-02"
+    },
+    "V503": {
+      "version": "V503",
+      "date": "2026-11-04",
+      "allocation": {
+        "TQQQ": 0.75,
+        "SHV": 0.25
+      },
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on TQQQ (Lev: 2.00x)",
+      "asset_details": {
+        "TQQQ": {
+          "price": 59.459999084472656,
+          "price_prev": 62.0099983215332,
+          "sma_fast": 69.59266688028971,
+          "sma_slow": 73.29879508972168,
+          "sma_regime": 65.37154483795166,
+          "rsi2": 0.0,
+          "momentum": -0.2660165718242823,
+          "is_bull": false,
+          "above_fast": false,
+          "above_slow": false,
+          "above_regime": false
+        },
+        "ETH": {
+          "price": 2248.88623046875,
+          "price_prev": 2273.05224609375,
+          "sma_fast": 2337.7551106770834,
+          "sma_slow": 2510.9163671875,
+          "sma_regime": 2157.1828668212893,
+          "rsi2": 45.658272532129935,
+          "momentum": -0.07996833427752537,
+          "is_bull": false,
+          "above_fast": false,
+          "above_slow": false,
+          "above_regime": true
+        },
+        "BTC": {
+          "price": 76677.296875,
+          "price_prev": 78248.453125,
+          "sma_fast": 80094.7046875,
+          "sma_slow": 81912.695,
+          "sma_regime": 73156.51890625,
+          "rsi2": 34.119543212060464,
+          "momentum": -0.06219552652841576,
+          "is_bull": false,
+          "above_fast": false,
+          "above_slow": false,
+          "above_regime": true
+        },
+        "GLD": {
+          "price": 361.6499938964844,
+          "price_prev": 355.7799987792969,
+          "sma_fast": 372.9260009765625,
+          "sma_slow": 389.3376007080078,
+          "sma_regime": 412.61175018310547,
+          "rsi2": 31.457631110260678,
+          "momentum": -0.04864002746212637,
+          "is_bull": false,
+          "above_fast": false,
+          "above_slow": false,
+          "above_regime": false
+        },
+        "SQQQ": {
+          "price": 43.54999923706055,
+          "price_prev": 41.83000183105469,
+          "sma_fast": 38.052666982014976,
+          "sma_slow": 36.80664371490479,
+          "sma_regime": 48.73219950675964,
           "rsi2": 70.45453757295593,
           "momentum": 0.3149154783074215,
           "is_bull": false,
