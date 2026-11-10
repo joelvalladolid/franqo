@@ -5,12 +5,20 @@
     "V428": {
       "version": "V428",
       "cash": NaN,
-      "positions": {},
+      "positions": {
+        "BTC": {
+          "shares": NaN,
+          "avg_cost": 74342.4609375,
+          "current_price": 74342.4609375,
+          "value": NaN,
+          "weight": 0.25
+        }
+      },
       "nav": NaN,
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 53,
+      "total_trades": 54,
       "history": [
         {
           "date": "2026-06-25",
@@ -815,6 +823,15 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-10",
+          "nav": NaN,
+          "weights": {
+            "BTC": 0.25,
+            "SHV": 0.75
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1241,32 +1258,33 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-10 03:45 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "BTC:25%, SHV:75%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: BTC:25%, SHV:75%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "SHV": 1.0
+        "BTC": 0.25,
+        "SHV": 0.75
       },
-      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
-      "last_updated": "2026-11-07T01:05:38.661840Z",
+      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on BTC (Lev: 1.00x)",
+      "last_updated": "2026-11-10T03:45:13.805882Z",
       "action_required": true
     },
     "V503": {
       "version": "V503",
       "cash": NaN,
-      "positions": {
-        "SQQQ": {
-          "shares": NaN,
-          "avg_cost": NaN,
-          "current_price": NaN,
-          "value": NaN,
-          "weight": 2.0
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 79,
+      "total_trades": 80,
       "history": [
         {
           "date": "2026-06-25",
@@ -2076,6 +2094,14 @@
             "SQQQ": 2.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-10",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2710,13 +2736,21 @@
           "to": "SQQQ:200%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SQQQ:200%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-10 03:45 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "SQQQ": 2.0
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83d\udc3b BEAR MARKET \u2014 SQQQ (Lev: 2.00x)",
-      "last_updated": "2026-11-07T01:05:39.269181Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-11-10T03:45:14.809051Z",
       "action_required": true
     }
   }
