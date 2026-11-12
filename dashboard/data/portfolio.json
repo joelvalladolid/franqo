@@ -5,20 +5,12 @@
     "V428": {
       "version": "V428",
       "cash": NaN,
-      "positions": {
-        "ETH": {
-          "shares": NaN,
-          "avg_cost": 2044.6800537109375,
-          "current_price": 2044.6800537109375,
-          "value": NaN,
-          "weight": 0.25
-        }
-      },
+      "positions": {},
       "nav": NaN,
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 55,
+      "total_trades": 56,
       "history": [
         {
           "date": "2026-06-25",
@@ -841,6 +833,14 @@
             "SHV": 0.75
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-12",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1283,14 +1283,21 @@
           "to": "ETH:25%, SHV:75%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: ETH:25%, SHV:75%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-12 02:27 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
-        "ETH": 0.25,
-        "SHV": 0.75
+        "SHV": 1.0
       },
-      "signal_reason": "\ud83c\udfaf MR OVERLAY \u2014 RSI(2) oversold on ETH (Lev: 1.00x)",
-      "last_updated": "2026-11-11T01:25:18.556359Z",
+      "signal_reason": "\ud83d\udcb0 CASH \u2014 100% SHV (no trend, no MR)",
+      "last_updated": "2026-11-12T02:27:12.409312Z",
       "action_required": true
     },
     "V503": {
@@ -1301,7 +1308,7 @@
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 81,
+      "total_trades": 82,
       "history": [
         {
           "date": "2026-06-25",
@@ -2127,6 +2134,14 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-12",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -2777,13 +2792,21 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-12 02:27 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
-      "last_updated": "2026-11-11T01:25:19.352687Z",
+      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 28.4%",
+      "last_updated": "2026-11-12T02:27:13.159575Z",
       "action_required": true
     }
   }
