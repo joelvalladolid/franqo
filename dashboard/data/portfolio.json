@@ -10,7 +10,7 @@
       "peak_nav": 113658.10559937061,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 65,
+      "total_trades": 66,
       "history": [
         {
           "date": "2026-06-25",
@@ -914,6 +914,14 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-26",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -1436,13 +1444,21 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-26 03:43 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 14.5%",
-      "last_updated": "2026-11-25T04:31:03.299224Z",
+      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
+      "last_updated": "2026-11-26T03:43:41.159497Z",
       "action_required": true
     },
     "V503": {
@@ -1453,7 +1469,7 @@
       "peak_nav": 27991140629.9457,
       "drawdown": NaN,
       "total_return": NaN,
-      "total_trades": 91,
+      "total_trades": 92,
       "history": [
         {
           "date": "2026-06-25",
@@ -2362,6 +2378,14 @@
             "SHV": 1.0
           },
           "return": NaN
+        },
+        {
+          "date": "2026-11-26",
+          "nav": NaN,
+          "weights": {
+            "SHV": 1.0
+          },
+          "return": NaN
         }
       ],
       "trade_log": [
@@ -3092,13 +3116,21 @@
           "to": "SHV:100%",
           "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
           "nav": NaN
+        },
+        {
+          "date": "2026-11-26 03:43 UTC",
+          "action": "\ud83d\udd04 COMPRAR / VENDER",
+          "from": "",
+          "to": "SHV:100%",
+          "signal": "Vender posiciones actuales y COMPRAR EXACTAMENTE: SHV:100%",
+          "nav": NaN
         }
       ],
       "current_allocation": {
         "SHV": 1.0
       },
-      "signal_reason": "\ud83d\uded1 STOP MODE (Cooldown) - 100% SHV",
-      "last_updated": "2026-11-25T04:31:03.891581Z",
+      "signal_reason": "\ud83d\uded1 VENDER TODO (STOP) - Ca\u00edda del 23.2%",
+      "last_updated": "2026-11-26T03:43:41.697850Z",
       "action_required": true
     }
   }
